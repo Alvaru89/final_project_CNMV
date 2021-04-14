@@ -13,15 +13,17 @@ import p_analysis
 import p_reporting
 
 
-fondo='ACCION EUROSTOXX 50 ETF, FI COTIZADO ARMONIZADO'
-os.remove(f'data/csv/{fondo}.csv')
-print(f'{fondo}.csv deleted')
+fondo='AVANCE GLOBAL, FI'
+if os.path.isfile(f'data/csv/{fondo}.csv'):
+    os.remove(f'data/csv/{fondo}.csv')
+    print(f'{fondo}.csv deleted')
 
 dict_links=acq.get_links_from_csv()
 link=dict_links[fondo]
 
 acq.get_info_fondo(fondo,link)
-print(f'{fondo}.csv created')
+# print(f'{fondo}.csv created')
 
 fondo_df=wra.inspect_data(fondo)
+print('finished!')
 

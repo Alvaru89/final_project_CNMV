@@ -37,6 +37,8 @@ def main(arguments):
 
     print("building dataframe")
     df=wra.create_df()
+    clean_df=wra.wrang_main(df)
+
 
 if __name__ == '__main__':
     my_arguments= argument_parser()
