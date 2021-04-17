@@ -36,7 +36,7 @@ def get_info_fondo(fondo,link):
     if os.path.isfile(f'data/csv/{clean_fondo}.csv'):
         # print(fondo, 'skipped!')
         return
-    print(f'extracting {fondo}')
+    # print(f'extracting {fondo}')
     web_fondo=requests.get(link+'&vista=0')
     sopa_fondo = BeautifulSoup(web_fondo.content, 'html.parser')
     gestora=sopa_fondo.find('table',{'id':"ctl00_ContentPrincipal_gridGestora"}).find('a').text

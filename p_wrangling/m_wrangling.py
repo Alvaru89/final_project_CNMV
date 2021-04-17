@@ -1,14 +1,19 @@
 import pandas as pd
 import numpy as np
+import os
 
-def create_df():
+def create_df(path='data/csv',limit=False):
     df=False
+    i=0
     for file in os.listdir('data/csv'):
-        print(file, 'parsed')
         if type(df)==bool:
             df=pd.read_csv(f'data/csv/{file}', sep='*')
         else:
             df=df.append(pd.read_csv(f'data/csv/{file}', sep='*'))
+        print(file, 'parsed')
+        i += 1
+        if limit and i>20:
+            return df
     return df
 
 def nulls_treat():
