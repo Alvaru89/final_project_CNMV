@@ -1,9 +1,10 @@
 import argparse
 import os
-import p_acquisition.m_acquisition as acq
+import p_acquisition.m_acquisition_lean as acq
 import p_wrangling.m_wrangling as wra
 import p_analysis
 import p_reporting
+import datetime
 
 def argument_parser():
     """
@@ -31,8 +32,22 @@ def main(arguments):
         dict_links=acq.get_links_from_web()
     print("obteniendo informacion de los fondos")
     for fondo, link in dict_links.items():
-        acq.get_info_fondo(fondo,link)
-        acq.get_info_posiciones(fondo,link)
+        print(f'starting time: {datetime.datetime.now()}')
+        try: acq.get_info_fondo(fondo,link)
+        except:
+            import json
+            import telegram
+            def notify_ending(message):
+                with open('../keys.json', 'r') as keys_file:
+                    k = json.load(keys_file)
+                    token = k['telegram_token']
+                    chat_id = k['telegram_chat_id']
+                bot = telegram.Bot(token=token)
+                bot.sendMessage(chat_id=chat_id, text=message)
+            notify_ending('ha petau')
+            raise EOFError
+        #acq.get_info_posiciones(fondo,link)
+        #print(f'Elapsed time: {(datetime.datetime.now() - a).total_seconds() / 60} minutes')
 
 
     print("building dataframe")

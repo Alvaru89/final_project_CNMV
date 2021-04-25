@@ -1,2 +1,2 @@
-fondo*name*nif*period*start_date*end_date*registro_CNMV*email_gest*rating_depos*riesgo*rotacion*rentab_avg*remun_liq*n_participaciones*n_participes*beneficio*patrimonio*dividendos*valor_liq*comision_gest_pat*comision_gest_res*comision_gest_total*comision_depos*rentab_IIC_trim*volat_vl_trim*ratio_gastos_trim
-BULNES GLOBAL, FI*BULNES GLOBAL FI CLASE A*02753879*Semester 2 2020*2020-07-01*2020-12-31*5493*atencion.cliente.gescooperativo@cajarural.com*BBB (FITCH)*6 en una escala del 1 al 7*0.0*-0.25**0.0*0*0.0*0*false*0.0*0.0*[]*0.0*0.0*[]*[]*[]
+fondo*name*period*start_date*end_date*riesgo*rotacion*rentab_avg*remun_liq*n_participaciones*n_participes*beneficio*patrimonio*dividendos*valor_liq*comision_gest_pat*comision_gest_res*comision_gest_total*comision_depos*rentab_IIC_trim*volat_vl_trim*ratio_gastos_trim
+BULNES GLOBAL, FI*BULNES GLOBAL FI CLASE A*2020 S 2*2020-07-01*2020-12-31*6 en una escala del 1 al 7*0.0*-0.25**0.0*0*0.0*0*false*0.0*0.0*[]*0.0*0.0*[]*[]*2.27

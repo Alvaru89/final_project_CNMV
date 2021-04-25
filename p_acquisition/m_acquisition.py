@@ -39,35 +39,45 @@ def get_info_fondo(fondo,link):
     # print(f'extracting {fondo}')
     web_fondo=requests.get(link+'&vista=0')
     sopa_fondo = BeautifulSoup(web_fondo.content, 'html.parser')
-    gestora=sopa_fondo.find('table',{'id':"ctl00_ContentPrincipal_gridGestora"}).find('a').text
-    depos=sopa_fondo.find('table',{'id':"ctl00_ContentPrincipal_gridDepositaria"}).find('a').text
     fecha_reg = sopa_fondo.find('td', {'data-th': "Fecha registro oficial"}).text
     fecha_reg = datetime.datetime.strptime(fecha_reg, '%d/%m/%Y')
     fecha_fin = sopa_fondo.find('td', {'data-th': "Fecha último folleto"}).text
     fecha_fin = datetime.datetime.strptime(fecha_fin, '%d/%m/%Y')
     start = fecha_reg.year
     end = fecha_fin.year + 1
-    try:
-        ISIN = sopa_fondo.find('td', {'data-th': "ISIN"}).find('a').text
-    except:
-        ISIN = ''
 
     temp = False
     for year in range(start, end):
-        url_year = link + f'&vista=1&fs=01%2f02%2f{year}'
+        web_fondo_year = requests.get(f'{link}&vista=0&fs=01%2f02%2f{year}')
+        sopa_fondo = BeautifulSoup(web_fondo_year.content, 'html.parser')
+        table_check = sopa_fondo.find('table')
+        if table_check == None: #check para saltar paginas vacias
+            continue
+        gestora = sopa_fondo.find('table', {'id': "ctl00_ContentPrincipal_gridGestora"}).find('td', {'data-th': "Denominación"}).text
+        depos = sopa_fondo.find('table', {'id': "ctl00_ContentPrincipal_gridDepositaria"}).find('td', {'data-th': "Denominación"}).text
+        try:
+            ISIN = sopa_fondo.find('td', {'data-th': "ISIN"}).find('a').text
+        except:
+            ISIN = ''
+
+        url_year = f'{link}&vista=1&fs=01%2f02%2f{year}'
         # print(url_year)
         web_fondo_year = requests.get(url_year)  # con requests
+
         sopa_fondo = BeautifulSoup(web_fondo_year.content, 'html.parser')
 
         tables = sopa_fondo.find('div', {'id': "ctl00_ContentPrincipal_pnIPPS"})
         if tables == None:
             continue
         tds = tables.find_all('td', {'data-th': "Documentos"})
+        # tds_dates=tables.find_all('td', {'data-th': "Periodo"})
+        # for i in range(len(tds_dates)):
+        #     print(f'{tds_dates[i].text} {year}')
         for td in tds:
             pdf_link = 'https://www.cnmv.es/portal/Consultas/' + str(td.find_all('a')[0]['href'][3:])
             #             print(pdf_link)
             xbrl_link = 'https://www.cnmv.es/portal/Consultas/' + str(td.find_all('a')[1]['href'][3:])
-            #             print(xbrl_link)
+            # print(xbrl_link)
 
             xbrl = requests.get(xbrl_link)
             fondo_info=xml_scrap_main(xbrl.content, nif, fondo)
@@ -78,8 +88,8 @@ def get_info_fondo(fondo,link):
             if type(temp) == bool:
                 temp = pd.DataFrame.from_dict(fondo_info[0], orient='index', columns=['0']).T
             else:
-                for i in range(0, len(fondo_info)):
-                    temp = temp.append(other=fondo_info[i], ignore_index=True)
+                for q in range(len(fondo_info)):
+                    temp = temp.append(other=fondo_info[q], ignore_index=True)
 
     if type(temp)!= bool:  #exportado
         temp.to_csv(f'data/csv/{clean_fondo}.csv', sep='*', index=False)
@@ -110,37 +120,33 @@ def xml_scrap(xml_soup, nif, fondo):
     startdate = str(xml_soup.find(['xbrli:startdate','startdate']).text)
     enddate = str(xml_soup.find(['xbrli:enddate','enddate']).text)
 
-    start_date = datetime.date.fromisoformat(startdate)
-    end_date = datetime.date.fromisoformat(enddate)
-
-    if end_date.month - start_date.month < 4:
-        period_type = 'Trimester'
-        if start_date.month <= 2:
-            period_number = 1
-        elif start_date.month <= 4:
-            period_number = 2
-        elif start_date.month <= 7:
-            period_number = 3
-        elif start_date.month >= 9:
-            period_number = 4
-    elif end_date.month - start_date.month > 4:
-        period_type = 'Semester'
-        if start_date.month <= 2:
-            period_number = 1
-        elif start_date.month > 5:
-            period_number = 2
-
-    full_period = f'{period_type} {period_number} {start_date.year}'
+    start_date, end_date, period_type, period_number = date_parser(startdate,enddate)
 
     # datos generales
     registro_CNMV = int(xml_soup.find(['iic-com:registrocnmv','registrocnmv']).text)
-    email_gest = xml_soup.find(['dgi-est-gen:communicationvalue','communicationvalue']).text
+    email_gest_ls = xml_soup.find_all(['dgi-est-gen:communicationvalue','communicationvalue'])
+    for mail in email_gest_ls:
+        if mail.text!='':
+            email_gest=mail.text
+        else: email_gest='ND'
     rating_depos = xml_soup.find(['iic-com:ratingdepositario','ratingdepositario']).text
     riesgo = xml_soup.find(['iic-com:perfilriesgo','perfilriesgo']).text
 
     # "FIM_S22020_V-66247677_da"
-    try: context_ref=xml_soup.find(["xbrli:context",'context'])['id']
-    except:context_ref=f'FIM_{full_period[0]}{period_number}{start_date.year}_V-{nif}_da'
+    try:
+        context_ref=xml_soup.find(["xbrli:context",'context'])['id']
+        if context_ref[-2:]!='da':
+            spag=context_ref.split('_')
+            spag[-1]='da'
+            context_ref = '_'.join(spag)
+            context_ref_info = xml_soup.find(["xbrli:context", 'context'],{'id':context_ref})
+            startdate = str(context_ref_info.find(['xbrli:startdate', 'startdate']).text)
+            enddate = str(context_ref_info.find(['xbrli:enddate', 'enddate']).text)
+            start_date, end_date, period_type, period_number = date_parser(startdate, enddate)
+
+    except:context_ref=f'FIM_{period_type}{period_number}{start_date.year}_V-{nif}_da'
+
+    full_period = f'{start_date.year} {period_type}{period_number}'
     context_ref2=f'{context_ref[:-2]}ia'
     context_ref3=f'{context_ref[:-2]}daq'
     context_ref_short = 'da'
@@ -223,37 +229,33 @@ def xml_scrap_clase(xml_soup, nif, fondo, i):
     # periodo
     startdate = str(xml_soup.find('xbrli:startdate').text)
     enddate = str(xml_soup.find('xbrli:enddate').text)
+    start_date, end_date, period_type, period_number = date_parser(startdate, enddate)
 
-    start_date = datetime.date.fromisoformat(startdate)
-    end_date = datetime.date.fromisoformat(enddate)
 
-    if end_date.month - start_date.month < 4:
-        period_type = 'Trimester'
-        if start_date.month <= 2:
-            period_number = 1
-        elif start_date.month <= 4:
-            period_number = 2
-        elif start_date.month <= 7:
-            period_number = 3
-        elif start_date.month >= 9:
-            period_number = 4
-    elif end_date.month - start_date.month > 4:
-        period_type = 'Semester'
-        if start_date.month <= 2:
-            period_number = 1
-        elif start_date.month > 5:
-            period_number = 2
-
-    full_period = f'{period_type} {period_number} {start_date.year}'
     # general
     registro_CNMV = int(xml_soup.find('iic-com:registrocnmv').text)
-    email_gest = xml_soup.find('dgi-est-gen:communicationvalue').text
+    email_gest_ls = xml_soup.find_all(['dgi-est-gen:communicationvalue', 'communicationvalue'])
+    for mail in email_gest_ls:
+        if mail.text != '':
+            email_gest = mail.text
+        else: email_gest='ND'
     rating_depos = xml_soup.find('iic-com:ratingdepositario').text
     riesgo = xml_soup.find('iic-com:perfilriesgo').text
 
     # "FIM_S22020_V-66247677_da"
-    try:context_ref=xml_soup.find("xbrli:context")['id']
+    try:
+        context_ref=xml_soup.find("xbrli:context")['id']
+        if context_ref[-2:] != 'da':
+            spag = context_ref.split('_')
+            spag[-1] = 'da'
+            context_ref = '_'.join(spag)
+            context_ref_info = xml_soup.find(["xbrli:context", 'context'], {'id': context_ref})
+            startdate = str(context_ref_info.find(['xbrli:startdate', 'startdate']).text)
+            enddate = str(context_ref_info.find(['xbrli:enddate', 'enddate']).text)
+            start_date, end_date, period_type, period_number = date_parser(startdate, enddate)
     except:context_ref=f'FIM_{full_period[0]}{period_number}{start_date.year}_V-{nif}_da'
+    full_period = f'{start_date.year} {period_type} {period_number}'
+
     context_ref2=f'{context_ref[:-2]}ia'
     context_ref3=f'{context_ref[:-2]}daq'
     context_ref_short = 'da'
@@ -295,17 +297,20 @@ def xml_scrap_clase(xml_soup, nif, fondo, i):
 
     # solo he cogido la del ultimo trimestre, rentabilidad extremas omitidas
     rentab_IIC_trim = xml_soup.find_all('iic-com:rentabilidadiic', {'contextref': context_ref_list})
-    if rentab_IIC_trim == None:
+    if rentab_IIC_trim == []:
         rentab_IIC_trim = xml_soup.find_all('iic-com:rentabilidadiic', {'contextref': context_ref3_list})
 
     # volatilidad de valor liquidativo, resto omitidas
     volat_vl_trim = xml_soup.find_all('iic-com-fon:volatilidadvalorliquidativo', {'contextref': context_ref_list, })
-    if volat_vl_trim == None:
+    if volat_vl_trim == []:
         volat_vl_trim = xml_soup.find_all('iic-com-fon:volatilidadvalorliquidativo', {'contextref': context_ref3_list})
 
     ratio_gastos_trim = xml_soup.find_all('iic-com:ratiototalgastos', {'contextref': context_ref_list})
-    if ratio_gastos_trim == None:
+    if ratio_gastos_trim == []:
         ratio_gastos_trim = xml_soup.find_all('iic-com:ratiototalgastos', {'contextref': context_ref3_list})
+
+    #checking missing data
+    #TBD
 
     float_vars = [n_participaciones, beneficio, valor_liq,
                   comision_gest_pat, comision_gest_res, comision_gest_total,
@@ -339,6 +344,36 @@ def xml_scrap_clase(xml_soup, nif, fondo, i):
             'comision_gest_total': comision_gest_total, 'comision_depos': comision_depos,
             'rentab_IIC_trim': rentab_IIC_trim,
             'volat_vl_trim': volat_vl_trim, 'ratio_gastos_trim': ratio_gastos_trim}
+
+
+def date_parser(startdate,enddate):
+    start_date = datetime.date.fromisoformat(startdate)
+    end_date = datetime.date.fromisoformat(enddate)
+
+    if end_date.month - start_date.month <= 4:
+        period_type = 'T'
+        if start_date.month <= 2:
+            period_number = 1
+        elif start_date.month <= 4:
+            period_number = 2
+        elif start_date.month <= 7:
+            period_number = 3
+        elif start_date.month >= 9:
+            period_number = 4
+    elif end_date.month - start_date.month > 4 and end_date.month - start_date.month <9 :
+        period_type = 'S'
+        if start_date.month <= 2:
+            period_number = 1
+        elif start_date.month > 5:
+            period_number = 2
+    elif end_date.month - start_date.month >=9:
+        period_type = 'Y'
+        period_number = ''
+    return start_date,end_date,period_type, period_number
+
+
+
+
 
 def get_info_posiciones(fondo,link):
     pass

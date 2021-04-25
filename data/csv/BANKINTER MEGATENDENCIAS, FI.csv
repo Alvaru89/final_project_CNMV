@@ -1,10 +1,10 @@
-fondo*name*nif*period*start_date*end_date*registro_CNMV*email_gest*rating_depos*riesgo*rotacion*rentab_avg*remun_liq*n_participaciones*n_participes*beneficio*patrimonio*dividendos*valor_liq*comision_gest_pat*comision_gest_res*comision_gest_total*comision_depos*rentab_IIC_trim*volat_vl_trim*ratio_gastos_trim
-BANKINTER MEGATENDENCIAS, FI*CLASE R*88443205*Trimester 3 2019*2019-07-01*2019-09-30*5408*N/D*BBB+ S&P*7, en una escala del 1 al 7*0.0*0.0**7261.59*64*0.0*717956*false*98.8703*0.24*0.0*0.24*0.03*[]*[]*1.19
-BANKINTER MEGATENDENCIAS, FI*CLASE R*88443205*Trimester 3 2020*2020-07-01*2020-09-30*5408*N/D*BBB+ S&P*7 en una escala del 1 al 7*0.1*0.02**172987.01*1140*0.0*18699041*false*108.0951*0.34*0.0*0.34*0.04*4.87*11.49*0.38
-BANKINTER MEGATENDENCIAS, FI*CLASE C*88443205*Trimester 3 2020*2020-07-01*2020-09-30*5408*N/D*BBB+ S&P*7 en una escala del 1 al 7*0.1*0.02**214413.06*8421*0.0*23965588*false*111.773*0.18*0.0*0.18*0.04*5.05*11.49*0.22
-BANKINTER MEGATENDENCIAS, FI*CLASE  R*88443205*Semester 1 2020*2020-01-01*2020-06-30*5408*N/D*BBB+ S&P*7 en una escala del 1 al 7*0.79*0.01**151755.45*1001*0.0*15641504*false*103.0705*0.67*0.0*0.67*0.07*[]*[]*[]
-BANKINTER MEGATENDENCIAS, FI*CLASE  C*88443205*Semester 1 2020*2020-01-01*2020-06-30*5408*N/D*BBB+ S&P*7 en una escala del 1 al 7*0.79*0.01**226666.77*8844*0.0*24118120*false*106.4034*0.11*0.0*0.11*0.02*[]*[]*[]
-BANKINTER MEGATENDENCIAS, FI*CLASE R*88443205*Trimester 1 2020*2020-01-01*2020-03-31*5408*N/D*BBB+ S&P*7 en una escala del 1 al 7*0.16*0.01**108222.52*824*0.0*9564045*false*88.3739*0.33*0.0*0.33*0.04*-15.58*33.4*0.38
-BANKINTER MEGATENDENCIAS, FI*CLASE C*88443205*Trimester 1 2020*2020-01-01*2020-03-31*5408*N/D*BBB+ S&P*7 en una escala del 1 al 7*0.16*0.01**0.0*0*0.0*0*false*0.0*0.0*0.0*0.0*0.0*0.0*0.0*0.0
-BANKINTER MEGATENDENCIAS, FI*CLASE R*88443205*Semester 2 2019*2019-07-01*2019-12-31*5408*N/D*BBB+ S&P*7, en una escala del 1 al 7*0.0*0.0**62456.32*443*0.0*6538323*false*104.6863*0.65*0.0*0.65*0.07*[]*[]*[]
-BANKINTER MEGATENDENCIAS, FI*CLASE C*88443205*Semester 2 2019*2019-07-01*2019-12-31*5408*N/D*BBB+ S&P*7, en una escala del 1 al 7*0.0*0.0**0.0*0*0.0*0*false*0.0*0.0*0.0*0.0*0.0*[]*[]*[]
+fondo*name*period*start_date*end_date*riesgo*rotacion*rentab_avg*remun_liq*n_participaciones*n_participes*beneficio*patrimonio*dividendos*valor_liq*comision_gest_pat*comision_gest_res*comision_gest_total*comision_depos*rentab_IIC_trim*volat_vl_trim*ratio_gastos_trim
+BANKINTER MEGATENDENCIAS, FI*CLASE R*2019 T 3*2019-07-01*2019-09-30*7, en una escala del 1 al 7*0.0*0.0**7261.59*64*0.0*717956*false*98.8703*0.24*0.0*0.24*0.03*[]*[]*1.19
+BANKINTER MEGATENDENCIAS, FI*CLASE R*2020 T 3*2020-07-01*2020-09-30*7 en una escala del 1 al 7*0.1*0.02**172987.01*1140*0.0*18699041*false*108.0951*0.34*0.0*0.34*0.04*4.87*11.49*0.38
+BANKINTER MEGATENDENCIAS, FI*CLASE C*2020 T 3*2020-07-01*2020-09-30*7 en una escala del 1 al 7*0.1*0.02**214413.06*8421*0.0*23965588*false*111.773*0.18*0.0*0.18*0.04*5.05*11.49*0.22
+BANKINTER MEGATENDENCIAS, FI*CLASE  R*2020 S 1*2020-01-01*2020-06-30*7 en una escala del 1 al 7*0.79*0.01**151755.45*1001*0.0*15641504*false*103.0705*0.67*0.0*0.67*0.07*16.63*20.42*0.37
+BANKINTER MEGATENDENCIAS, FI*CLASE  C*2020 S 1*2020-01-01*2020-06-30*7 en una escala del 1 al 7*0.79*0.01**226666.77*8844*0.0*24118120*false*106.4034*0.11*0.0*0.11*0.02*6.4*12.6*0.14
+BANKINTER MEGATENDENCIAS, FI*CLASE R*2020 T 1*2020-01-01*2020-03-31*7 en una escala del 1 al 7*0.16*0.01**108222.52*824*0.0*9564045*false*88.3739*0.33*0.0*0.33*0.04*-15.58*33.4*0.38
+BANKINTER MEGATENDENCIAS, FI*CLASE C*2020 T 1*2020-01-01*2020-03-31*7 en una escala del 1 al 7*0.16*0.01**0.0*0*0.0*0*false*0.0*0.0*0.0*0.0*0.0*0.0*0.0*0.0
+BANKINTER MEGATENDENCIAS, FI*CLASE R*2019 S 2*2019-07-01*2019-12-31*7, en una escala del 1 al 7*0.0*0.0**62456.32*443*0.0*6538323*false*104.6863*0.65*0.0*0.65*0.07*5.88*7.2*0.37
+BANKINTER MEGATENDENCIAS, FI*CLASE C*2019 S 2*2019-07-01*2019-12-31*7, en una escala del 1 al 7*0.0*0.0**0.0*0*0.0*0*false*0.0*0.0*0.0*0.0*0.0*0.0*0.0*0.0
