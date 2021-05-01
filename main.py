@@ -11,8 +11,6 @@ def argument_parser():
     parse arguments to script
     """
     parser=argparse.ArgumentParser(description='pass csv file')
-    #parser.add_argument("-c","--country", help='specify country or type all', type=str)
-    #parser.add_argument("-b", "--bonus", help='specify bonus 1 or 2', type=str)
     parser.add_argument("-d", "--delete", help='specify Y or y', type=str)
     args=parser.parse_args()
     return args
@@ -32,7 +30,6 @@ def main(arguments):
         dict_links=acq.get_links_from_web()
     print("obteniendo informacion de los fondos")
     for fondo, link in dict_links.items():
-        print(f'starting time: {datetime.datetime.now()}')
         try: acq.get_info_fondo(fondo,link)
         except:
             import json
@@ -53,6 +50,8 @@ def main(arguments):
     print("building dataframe")
     df=wra.create_df()
     clean_df=wra.wrang_main(df)
+    print("creating data")
+    extra_df=wra.wrang_main(wra.create_data(df,merge=False,save=True))
 
 
 if __name__ == '__main__':

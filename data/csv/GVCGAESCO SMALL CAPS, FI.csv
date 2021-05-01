@@ -1,0 +1,99 @@
+fondo*name*period*start_date*end_date*riesgo*rotacion*rentab_avg*remun_liq*n_participaciones*n_participes*beneficio*patrimonio*dividendos*valor_liq*comision_gest_pat*comision_gest_res*comision_gest_total*comision_depos*rentab_IIC_trim*volat_vl_trim*ratio_gastos_trim*clase
+GVCGAESCO SMALL CAPS, FI*"Gaesco
+                Small Caps, F.I."*2009 S2*2009-07-01*2009-12-31*medio-alto*0.0*0.12**841849.08*576*0.0*5793922*false*6.8824***1.13*0.04*4.21*12.4*0.8*False
+GVCGAESCO SMALL CAPS, FI*"Gaesco
+                Small Caps, F.I."*2009 T3*2009-07-01*2009-09-30*medio-alto*0.0*0.12**767749.06*551*0.0*5070659*false*6.6046***0.57*0.02*22.65*16.06*0.76*False
+GVCGAESCO SMALL CAPS, FI*"Gaesco
+                Small Caps, F.I."*2009 S1*2009-01-01*2009-06-30*medio-alto*0.26*0.6**786036.51*562*0.0*4232583*false*5.3847***1.12*0.05*32.28*26.89*0.61*False
+GVCGAESCO SMALL CAPS, FI*GVC Gaesco Small Caps, F.I.*2010 S2*2010-07-01*2010-12-31*Alto*0.0*0.51**1326910.53*653*0.0*11664416*false*8.7907***1.13*0.05*15.02*11.14*0.6*False
+GVCGAESCO SMALL CAPS, FI*GVC Gaesco Small Caps, F.I.*2010 T3*2010-07-01*2010-09-30*medio-alto*0.02*0.48**1050331.46*619*0.0*8027314*false*7.6426***0.57*0.02*6.22*12.63*0.63*False
+GVCGAESCO SMALL CAPS, FI*"Gaesco
+                Small Caps, F.I."*2010 S1*2010-01-01*2010-06-30*medio-alto*0.0*0.12**1078974.0*620*0.0*7763183*false*7.195***1.12*0.05*-5.24*23.74*0.67*False
+GVCGAESCO SMALL CAPS, FI*"Gaesco
+                Small Caps, F.I."*2010 T1*2010-01-01*2010-03-31*medio-alto*0.0*0.12**940548.65*601*0.0*7141149*false*7.5925***0.55*0.02*10.32*13.61*0.59*False
+GVCGAESCO SMALL CAPS, FI*GVCGaesco Small Caps, F.I.*2011 S2*2011-07-01*2011-12-31*Alto*0.0*1.45**1287942.52*782*0.0*8051179*false*6.2512*1.14*0.0*1.14*0.05*0.41*24.51*0.61*True
+GVCGAESCO SMALL CAPS, FI*GVCGaesco Small Caps Clase P, F.I.*2011 S2*2011-07-01*2011-12-31*Alto*0.0*1.45**0.0*0*0.0*0*false*6.2513*0.0*0.0*0.0*0.0*0.41*24.51*0.0*True
+GVCGAESCO SMALL CAPS, FI*GVCGaesco Small Caps Clase I, F.I.*2011 S2*2011-07-01*2011-12-31*Alto*0.0*1.45**254520.72*1*0.0*1591124*false*6.2515*0.37*0.0*0.37*0.03*0.41*24.51*0.18*True
+GVCGAESCO SMALL CAPS, FI*GVCGaesco Small Caps, F.I.*2011 T3*2011-07-01*2011-09-30*Alto*0.0*1.45**1565189.96*804*0.0*9744*false*6.2257*[]*[]*0.57*0.03*-27.03*27.41*0.6*True
+GVCGAESCO SMALL CAPS, FI*GVCGaesco Small Caps Clase P, F.I.*2011 T3*2011-07-01*2011-09-30*Alto*0.0*1.45**0.0*0*0.0*0*false*6.2258*[]*[]*0.0*0.0*"[<iic-com:rentabilidadiic contextref=""FIM_T32011_E-60685922_da"" decimals=""2"" unitref=""pure"">-27.03</iic-com:rentabilidadiic>]"*"[<iic-com-fon:volatilidadvalorliquidativo contextref=""FIM_T32011_E-60685922_da"" decimals=""2"" unitref=""pure"">27.41</iic-com-fon:volatilidadvalorliquidativo>]"*"[<iic-com:ratiototalgastos contextref=""FIM_T32011_E-60685922_da"" decimals=""2"" unitref=""pure"">0.60</iic-com:ratiototalgastos>]"*True
+GVCGAESCO SMALL CAPS, FI*GVCGaesco Small Caps Clase I, F.I.*2011 T3*2011-07-01*2011-09-30*Alto*0.0*1.45**0.0*0*0.0*0*false*6.2259*[]*[]*0.0*0.0*"[<iic-com:rentabilidadiic contextref=""FIM_T32011_E-60685922_da"" decimals=""2"" unitref=""pure"">-27.03</iic-com:rentabilidadiic>]"*"[<iic-com-fon:volatilidadvalorliquidativo contextref=""FIM_T32011_E-60685922_da"" decimals=""2"" unitref=""pure"">27.41</iic-com-fon:volatilidadvalorliquidativo>]"*"[<iic-com:ratiototalgastos contextref=""FIM_T32011_E-60685922_da"" decimals=""2"" unitref=""pure"">0.60</iic-com:ratiototalgastos>]"*True
+GVCGAESCO SMALL CAPS, FI*GVC Gaesco Small Caps, F.I.*2011 S1*2011-01-01*2011-06-30*Alto*0.02*1.33**1555199.85*801*0.0*13268822*false*8.5319***1.11*0.05*-5.63*11.32*0.6*False
+GVCGAESCO SMALL CAPS, FI*GVC Gaesco Small Caps, F.I.*2011 T1*2011-01-01*2011-03-31*alto*0.0*1.09**1590655.79*772*0.0*14380243*false*9.0404***0.55*0.02*2.84*12.45*0.59*False
+GVCGAESCO SMALL CAPS, FI*GVCGaesco Small Caps, F.I.*2012 T3*2012-07-01*2012-09-30*Alto*0.37*1.33**1252024.4*758*0.0*8384723*false*6.6969*0.57*0.0*0.57*0.03*4.9*12.63*0.51*True
+GVCGAESCO SMALL CAPS, FI*GVCGaesco Small Caps Clase P, F.I.*2012 T3*2012-07-01*2012-09-30*Alto*0.37*1.33**0.0*0*0.0*0*false*6.6971*0.0*0.0*0.0*0.0*4.9*14.64*0.0*True
+GVCGAESCO SMALL CAPS, FI*GVCGaesco Small Caps Clase I, F.I.*2012 T3*2012-07-01*2012-09-30*Alto*0.37*1.33**225323.94*1*0.0*1525848*false*6.7718*0.19*0.0*0.19*0.03*5.28*12.52*0.05*True
+GVCGAESCO SMALL CAPS, FI*GVCGaesco Small Caps, F.I.*2012 S1*2012-01-01*2012-06-30*Alto*1.16*1.33**1285761.97*772*0.0*8208363*false*6.384*1.12*0.0*1.12*0.06*-10.84*16.87*0.6*True
+GVCGAESCO SMALL CAPS, FI*GVCGaesco Small Caps Clase P, F.I.*2012 S1*2012-01-01*2012-06-30*Alto*1.16*1.33**0.0*0*0.0*0*false*6.3842*0.0*0.0*0.0*0.0*-10.84*16.87*0.0*True
+GVCGAESCO SMALL CAPS, FI*GVCGaesco Small Caps Clase I, F.I.*2012 S1*2012-01-01*2012-06-30*Alto*1.16*1.33**225323.94*1*0.0*1449323*false*6.4322*0.37*0.0*0.37*0.06*-10.48*16.77*0.06*True
+GVCGAESCO SMALL CAPS, FI*GVCGaesco Small Caps, F.I.*2012 T1*2012-01-01*2012-03-31*Alto*0.77*1.33**1292198.14*773*0.0*9252128*false*7.16*0.56*0.0*0.56*0.03*14.54*13.79*0.6*True
+GVCGAESCO SMALL CAPS, FI*GVCGaesco Small Caps Clase P, F.I.*2012 T1*2012-01-01*2012-03-31*Alto*0.77*1.33**0.0*0*0.0*0*false*7.1601*0.0*0.0*0.0*0.0*14.54*13.79*0.0*True
+GVCGAESCO SMALL CAPS, FI*GVCGaesco Small Caps Clase I, F.I.*2012 T1*2012-01-01*2012-03-31*Alto*0.77*1.33**254520.72*1*0.0*1828829*false*7.1854*0.19*0.0*0.19*0.15*14.94*13.75*0.07*True
+GVCGAESCO SMALL CAPS, FI*GVCGaesco Small Caps, F.I.*2013 S2*2013-07-01*2013-12-31*6 (En una escala del 1 al 7)*0.07*1.94**1827904.6*1120*0.0*17669926*false*9.6668*1.13*0.0*1.13*0.05*12.24*8.82*0.6*True
+GVCGAESCO SMALL CAPS, FI*GVCGaesco Small Caps Clase P, F.I.*2013 S2*2013-07-01*2013-12-31*6 (En una escala del 1 al 7)*0.07*1.94**0.0*0*0.0*0*false*9.7032*0.0*0.0*0.0*0.0*12.45*8.82*0.0*True
+GVCGAESCO SMALL CAPS, FI*GVCGaesco Small Caps Clase I, F.I.*2013 S2*2013-07-01*2013-12-31*6 (En una escala del 1 al 7)*0.07*1.94**654577.12*3*0.0*6490922*false*9.9162*0.38*0.0*0.38*0.05*12.53*8.73*0.22*True
+GVCGAESCO SMALL CAPS, FI*GVCGaesco Small Caps, F.I.*2013 T3*2013-07-01*2013-09-30*6 (En una escala del 1 al 7)*0.0*1.94**1759239.2*993*0.0*15152089*false*8.6129*0.57*0.0*0.57*0.03*11.87*8.65*0.6*True
+GVCGAESCO SMALL CAPS, FI*GVCGaesco Small Caps Clase P, F.I.*2013 T3*2013-07-01*2013-09-30*6 (En una escala del 1 al 7)*0.0*1.94**0.0*0*0.0*0*false*8.629*0.0*0.0*0.0*0.0*12.08*8.65*0.0*True
+GVCGAESCO SMALL CAPS, FI*GVCGaesco Small Caps Clase I, F.I.*2013 T3*2013-07-01*2013-09-30*6 (En una escala del 1 al 7)*0.0*1.94**603977.07*3*0.0*5322306*false*8.8121*0.19*0.0*0.19*0.02*12.2*8.59*0.22*True
+GVCGAESCO SMALL CAPS, FI*GVCGaesco Small Caps, F.I.*2013 S1*2013-01-01*2013-06-30*6 (En una escala del 1 al 7)*0.0*1.94**1656501.41*944*0.0*12753315*false*7.6989*1.12*0.0*1.12*0.05*0.66*11.91*0.59*True
+GVCGAESCO SMALL CAPS, FI*GVCGaesco Small Caps Clase P, F.I.*2013 S1*2013-01-01*2013-06-30*6 (En una escala del 1 al 7)*0.0*1.94**0.0*0*0.0*0*false*7.6991*0.0*0.0*0.0*0.0*0.66*11.91*0.0*True
+GVCGAESCO SMALL CAPS, FI*GVCGaesco Small Caps Clase I, F.I.*2013 S1*2013-01-01*2013-06-30*6 (En una escala del 1 al 7)*0.0*1.94**622532.88*3*0.0*4889123*false*7.8536*0.37*0.0*0.37*0.05*1.02*11.86*0.21*True
+GVCGAESCO SMALL CAPS, FI*GVCGaesco Small Caps, F.I.*2013 T1*2013-01-01*2013-03-31*Alto*0.0*1.94**1510145.34*878*0.0*11550236*false*7.6484*0.55*0.0*0.55*0.02*4.81*10.37*0.4*True
+GVCGAESCO SMALL CAPS, FI*GVCGaesco Small Caps Clase P, F.I.*2013 T1*2013-01-01*2013-03-31*Alto*0.0*1.94**0.0*0*0.0*0*false*7.6486*0.0*0.0*0.0*0.0*4.81*10.37*0.0*True
+GVCGAESCO SMALL CAPS, FI*GVCGaesco Small Caps Clase I, F.I.*2013 T1*2013-01-01*2013-03-31*Alto*0.0*1.94**678170.08*4*0.0*5272548*false*7.7747*0.18*0.0*0.18*0.02*5.16*10.32*0.07*True
+GVCGAESCO SMALL CAPS, FI*GVCGaesco Small Caps, F.I.*2014 T3*2014-07-01*2014-09-30*6 (En una escala del 1 al 7)*0.0*1.94**2925105.72*1581*0.0*29116714*false*9.9541*0.57*0.0*0.57*0.02*-9.62*12.06*0.59*True
+GVCGAESCO SMALL CAPS, FI*GVCGaesco Small Caps Clase P, F.I.*2014 T3*2014-07-01*2014-09-30*6 (En una escala del 1 al 7)*0.0*1.94**0.0*0*0.0*0*false*0.0*0.4*0.0*0.4*0.0*0.0*11.99*0.35*True
+GVCGAESCO SMALL CAPS, FI*GVCGaesco Small Caps Clase I, F.I.*2014 T3*2014-07-01*2014-09-30*6 (En una escala del 1 al 7)*0.0*1.94**708764.84*3*0.0*7322777*false*10.3317*0.19*0.0*0.19*0.03*-9.23*11.98*0.22*True
+GVCGAESCO SMALL CAPS, FI*GVCGaesco Small Caps, F.I.*2014 S1*2014-01-01*2014-06-30*6 (En una escala del 1 al 7)*0.0*1.94**2916074.48*1572*0.0*32117908*false*11.0141*1.12*0.0*1.12*0.05*0.38*10.76*0.59*True
+GVCGAESCO SMALL CAPS, FI*GVCGaesco Small Caps Clase P, F.I.*2014 S1*2014-01-01*2014-06-30*6 (En una escala del 1 al 7)*0.0*1.94**46174.22*1*0.0*512328*false*11.0955*0.74*0.0*0.74*0.05*0.56*10.72*0.4*True
+GVCGAESCO SMALL CAPS, FI*GVCGaesco Small Caps Clase I, F.I.*2014 S1*2014-01-01*2014-06-30*6 (En una escala del 1 al 7)*0.0*1.94**656098.99*3*0.0*7467527*false*11.3817*0.37*0.0*0.37*0.05*0.75*10.72*0.21*True
+GVCGAESCO SMALL CAPS, FI*GVCGaesco Small Caps, F.I.*2014 T1*2014-01-01*2014-03-31*6 (En una escala del 1 al 7)*0.0*1.81**2583337.77*1425*0.0*28345588*false*10.9725*0.55*0.0*0.55*0.03*13.51*11.84*0.58*True
+GVCGAESCO SMALL CAPS, FI*GVCGaesco Small Caps Clase P, F.I.*2014 T1*2014-01-01*2014-03-31*6 (En una escala del 1 al 7)*0.0*1.81**46174.22*1*0.0*509451*false*11.0332*0.32*0.0*0.32*0.03*13.71*11.84*0.35*True
+GVCGAESCO SMALL CAPS, FI*GVCGaesco Small Caps Clase I, F.I.*2014 T1*2014-01-01*2014-03-31*6 (En una escala del 1 al 7)*0.0*1.81**656098.99*3*0.0*7411747*false*11.2967*0.18*0.0*0.18*0.03*13.92*11.82*0.21*True
+GVCGAESCO SMALL CAPS, FI*GVCGaesco Small Caps, F.I.*2015 S2*2015-07-01*2015-12-31*6 (En una escala del 1 al 7)*0.88*0.2**2933068.09*1658*0.0*33502599*false*11.4224*1.13*0.0*1.13*0.05*8.21*12.65*0.61*True
+GVCGAESCO SMALL CAPS, FI*GVCGaesco Small Caps Clase P, F.I.*2015 S2*2015-07-01*2015-12-31*6 (En una escala del 1 al 7)*0.88*0.2**0.0*0*0.0*0*false*11.6436*0.0*0.0*0.0*0.0*8.41*12.65*0.0*True
+GVCGAESCO SMALL CAPS, FI*GVCGaesco Small Caps Clase I, F.I.*2015 S2*2015-07-01*2015-12-31*6 (En una escala del 1 al 7)*0.88*0.2**337267.29*2*0.0*4074036*false*12.0795*0.38*0.0*0.38*0.05*8.52*12.5*0.17*True
+GVCGAESCO SMALL CAPS, FI*GVCGaesco Small Caps, F.I.*2015 T3*2015-07-01*2015-09-30*6 (En una escala del 1 al 7)*1.0*0.21**2668340.19*1529*0.0*28166625*false*10.5559*0.57*0.0*0.57*0.03*-8.77*21.22*0.6*True
+GVCGAESCO SMALL CAPS, FI*GVCGaesco Small Caps Clase P, F.I.*2015 T3*2015-07-01*2015-09-30*6 (En una escala del 1 al 7)*1.0*0.21**0.0*0*0.0*0*false*10.7399*0.0*0.0*0.0*0.0*-8.59*21.22*0.0*True
+GVCGAESCO SMALL CAPS, FI*GVCGaesco Small Caps Clase I, F.I.*2015 T3*2015-07-01*2015-09-30*6 (En una escala del 1 al 7)*1.0*0.21**643702.04*3*0.0*7164917*false*11.1308*0.19*0.0*0.19*0.02*-8.34*21.01*0.22*True
+GVCGAESCO SMALL CAPS, FI*GVCGaesco Small Caps, F.I.*2015 S1*2015-01-01*2015-06-30*6 (En una escala del 1 al 7)*0.96*0.93**2563383.29*1502*0.0*29658613*false*11.5701*1.12*0.0*1.12*0.05*1.23*13.2*0.59*True
+GVCGAESCO SMALL CAPS, FI*GVCGaesco Small Caps Clase P, F.I.*2015 S1*2015-01-01*2015-06-30*6 (En una escala del 1 al 7)*0.96*0.93**0.0*0*0.0*0*false*0.0*0.0*0.0*0.0*0.0*0.0*13.2*0.0*True
+GVCGAESCO SMALL CAPS, FI*GVCGaesco Small Caps Clase I, F.I.*2015 S1*2015-01-01*2015-06-30*6 (En una escala del 1 al 7)*0.96*0.93**643702.04*3*0.0*7816606*false*12.1432*0.37*0.0*0.37*0.05*1.61*13.13*0.22*True
+GVCGAESCO SMALL CAPS, FI*GVCGaesco Small Caps, F.I.*2015 T1*2015-01-01*2015-03-31*6 (En una escala del 1 al 7)*0.25*1.44**2563204.64*1492*0.0*29295691*false*11.4293*0.55*0.0*0.55*0.02*18.77*12.73*0.58*True
+GVCGAESCO SMALL CAPS, FI*GVCGaesco Small Caps Clase P, F.I.*2015 T1*2015-01-01*2015-03-31*6 (En una escala del 1 al 7)*0.25*1.44**0.0*0*0.0*0*false*11.585*0.0*0.0*0.0*0.0*0.0*12.73*0.0*True
+GVCGAESCO SMALL CAPS, FI*GVCGaesco Small Caps Clase I, F.I.*2015 T1*2015-01-01*2015-03-31*6 (En una escala del 1 al 7)*0.25*1.44**561994.83*2*0.0*6716375*false*11.951*0.18*0.0*0.18*0.03*19.17*12.71*0.21*True
+GVCGAESCO SMALL CAPS, FI*GVCGaesco Small Caps, F.I.*2016 S2*2016-07-01*2016-12-31*6 (En una escala del 1 al 7)*0.0*0.0**3008766.81*1806*0.0*35957194*false*11.9508*0.85*0.0*0.85*0.01*3.41*10.57*0.53*True
+GVCGAESCO SMALL CAPS, FI*GVCGaesco Small Caps Clase P, F.I.*2016 S2*2016-07-01*2016-12-31*6 (En una escala del 1 al 7)*0.0*0.0**98011.2*3*0.0*1202006*false*12.264*0.04*0.0*0.04*0.06*3.55*10.57*0.14*True
+GVCGAESCO SMALL CAPS, FI*GVCGaesco Small Caps Clase I, F.I.*2016 S2*2016-07-01*2016-12-31*6 (En una escala del 1 al 7)*0.0*0.0**0.0*0*0.0*0*false*0.0*0.0*0.0*0.0*0.0*3.75*10.57*0.06*True
+GVCGAESCO SMALL CAPS, FI*GVCGaesco Small Caps, F.I.*2016 T3*2016-07-01*2016-09-30*6 (En una escala del 1 al 7)*0.0*0.0**3039824.07*1754*0.0*35131315*false*11.557*0.43*0.0*0.43*0.01*9.98*11.89*0.52*True
+GVCGAESCO SMALL CAPS, FI*GVCGaesco Small Caps Clase P, F.I.*2016 T3*2016-07-01*2016-09-30*6 (En una escala del 1 al 7)*0.0*0.0**0.0*0*0.0*0*false*0.0*0.0*0.0*0.0*0.0*10.18*11.89*0.0*True
+GVCGAESCO SMALL CAPS, FI*GVCGaesco Small Caps Clase I, F.I.*2016 T3*2016-07-01*2016-09-30*6 (En una escala del 1 al 7)*0.0*0.0**0.0*0*0.0*0*false*0.0*0.0*0.0*0.0*0.0*10.34*11.89*"[<iic-com:ratiototalgastos contextref=""FIM_T32016_V-60685922_da"" decimals=""2"" unitref=""pure"">0.52</iic-com:ratiototalgastos>, <iic-com:ratiototalgastos contextref=""FIM_T32016_V-60685922_da"" decimals=""2"" unitref=""pure"">0.00</iic-com:ratiototalgastos>]"*True
+GVCGAESCO SMALL CAPS, FI*GVCGaesco Small Caps, F.I.*2016 S1*2016-01-01*2016-06-30*6 (En una escala del 1 al 7)*0.0*0.0**2928855.0*1736*0.0*30776539*false*10.508*0.9*0.0*0.9*0.02*-3.18*17.4*0.51*True
+GVCGAESCO SMALL CAPS, FI*GVCGaesco Small Caps Clase P, F.I.*2016 S1*2016-01-01*2016-06-30*6 (En una escala del 1 al 7)*0.0*0.0**0.0*0*0.0*0*false*0.0*0.0*0.0*0.0*0.0*-3.01*17.4*0.0*True
+GVCGAESCO SMALL CAPS, FI*GVCGaesco Small Caps Clase I, F.I.*2016 S1*2016-01-01*2016-06-30*6 (En una escala del 1 al 7)*0.0*0.0**0.0*0*0.0*0*false*0.0*0.28*0.0*0.28*0.0*-2.86*17.4*0.0*True
+GVCGAESCO SMALL CAPS, FI*GVCGaesco Small Caps, F.I.*2016 T1*2016-01-01*2016-03-31*6 (En una escala del 1 al 7)*18.43*0.0**2867897.32*1712*0.0*31125284*false*10.853*0.48*0.0*0.48*0.02*-4.98*21.21*0.5*True
+GVCGAESCO SMALL CAPS, FI*GVCGaesco Small Caps Clase P, F.I.*2016 T1*2016-01-01*2016-03-31*6 (En una escala del 1 al 7)*18.43*0.0**0.0*0*0.0*0*false*0.0*0.0*0.0*0.0*0.0*-4.81*21.21*0.0*True
+GVCGAESCO SMALL CAPS, FI*GVCGaesco Small Caps Clase I, F.I.*2016 T1*2016-01-01*2016-03-31*6 (En una escala del 1 al 7)*18.43*0.0**0.0*0*0.0*0*false*11.5155*0.14*0.0*0.14*0.0*-4.67*21.18*0.15*True
+GVCGAESCO SMALL CAPS, FI*GVCGaesco Small Caps, F.I.*2017 S2*2017-07-01*2017-12-31*6 (En una escala del 1 al 7)*0.0*-0.4**3325157.28*2104*0.0*49770479*false*14.9679*0.86*0.0*0.86*0.01*3.71*7.93*0.53*True
+GVCGAESCO SMALL CAPS, FI*GVCGaesco Small Caps Clase P, F.I.*2017 S2*2017-07-01*2017-12-31*6 (En una escala del 1 al 7)*0.0*-0.4**265689.47*8*0.0*4106167*false*15.4548*0.5*0.0*0.5*0.02*3.87*7.88*0.36*True
+GVCGAESCO SMALL CAPS, FI*GVCGaesco Small Caps Clase I, F.I.*2017 S2*2017-07-01*2017-12-31*6 (En una escala del 1 al 7)*0.0*-0.4**0.0*0*0.0*0*false*0.0*0.0*0.0*0.0*0.0*0.0*7.93*0.0*True
+GVCGAESCO SMALL CAPS, FI*GVCGaesco Small Caps, F.I.*2017 T3*2017-07-01*2017-09-30*6 (En una escala del 1 al 7)*0.0*-0.4**3116851.78*1981*0.0*44984173*false*14.4326*0.43*0.0*0.43*0.01*4.76*9.42*0.58*True
+GVCGAESCO SMALL CAPS, FI*GVCGaesco Small Caps Clase P, F.I.*2017 T3*2017-07-01*2017-09-30*6 (En una escala del 1 al 7)*0.0*-0.4**201153.92*6*0.0*2992952*false*14.8789*0.25*0.0*0.25*0.01*4.92*9.38*0.41*True
+GVCGAESCO SMALL CAPS, FI*GVCGaesco Small Caps Clase I, F.I.*2017 T3*2017-07-01*2017-09-30*6 (En una escala del 1 al 7)*0.0*-0.4**0.0*0*0.0*0*false*0.0*0.0*0.0*0.0*0.0*0.0*9.42*0.0*True
+GVCGAESCO SMALL CAPS, FI*GVCGaesco Small Caps, F.I.*2017 S1*2017-01-01*2017-06-30*6 (En una escala del 1 al 7)*0.0*0.0**3032046.87*1951*0.0*41771228*false*13.7766*0.84*0.0*0.84*0.01*6.74*9.89*0.44*True
+GVCGAESCO SMALL CAPS, FI*GVCGaesco Small Caps Clase P, F.I.*2017 S1*2017-01-01*2017-06-30*6 (En una escala del 1 al 7)*0.0*0.0**211462.29*7*0.0*2998743*false*14.181*0.49*0.0*0.49*0.02*6.91*9.86*0.26*True
+GVCGAESCO SMALL CAPS, FI*GVCGaesco Small Caps Clase I, F.I.*2017 S1*2017-01-01*2017-06-30*6 (En una escala del 1 al 7)*0.0*0.0**0.0*0*0.0*0*false*14.8569*0.0*0.0*0.0*0.0*7.09*9.89*0.0*True
+GVCGAESCO SMALL CAPS, FI*GVCGaesco Small Caps, F.I.*2017 T1*2017-01-01*2017-03-31*6 (En una escala del 1 al 7)*0.0*0.0**3044853.59*1892*0.0*39297744*false*12.9063*0.42*0.0*0.42*0.01*8.0*7.57*0.52*True
+GVCGAESCO SMALL CAPS, FI*GVCGaesco Small Caps Clase P, F.I.*2017 T1*2017-01-01*2017-03-31*6 (En una escala del 1 al 7)*0.0*0.0**186303.06*6*0.0*2471165*false*13.2642*0.24*0.0*0.24*0.01*8.16*7.56*0.26*True
+GVCGAESCO SMALL CAPS, FI*GVCGaesco Small Caps Clase I, F.I.*2017 T1*2017-01-01*2017-03-31*6 (En una escala del 1 al 7)*0.0*0.0**0.0*0*0.0*0*false*0.0*0.0*0.0*0.0*0.0*8.34*7.57*0.0*True
+GVCGAESCO SMALL CAPS, FI*GVCGaesco Small Caps, F.I.*2018 S2*2018-07-01*2018-12-31*6 (En una escala del 1 al 7)*0.0*-0.4**3451502.64*2277*0.0*38618886*false*11.189*0.86*0.0*0.86*0.02*-18.46*20.03*0.54*True
+GVCGAESCO SMALL CAPS, FI*GVCGaesco Small Caps Clase P, F.I.*2018 S2*2018-07-01*2018-12-31*6 (En una escala del 1 al 7)*0.0*-0.4**275007.37*11*0.0*3205376*false*11.6556*0.5*0.0*0.5*0.01*-18.2*19.87*0.36*True
+GVCGAESCO SMALL CAPS, FI*GVCGaesco Small Caps Clase I, F.I.*2018 S2*2018-07-01*2018-12-31*6 (En una escala del 1 al 7)*0.0*-0.4**151194.09*134*0.0*1866479*false*12.3449*0.2*0.0*0.2*0.01*-17.99*19.75*0.2*True
+GVCGAESCO SMALL CAPS, FI*GVCGaesco Small Caps, F.I.*2018 T3*2018-07-01*2018-09-30*6 (En una escala del 1 al 7)*0.0*-0.4**3516809.56*2313*0.0*48259995*false*13.7227*0.43*0.0*0.43*0.01*-4.46*9.11*0.52*True
+GVCGAESCO SMALL CAPS, FI*GVCGaesco Small Caps Clase P, F.I.*2018 T3*2018-07-01*2018-09-30*6 (En una escala del 1 al 7)*0.0*-0.4**295924.18*10*0.0*4216353*false*14.2481*0.25*0.0*0.25*0.01*-4.27*9.08*0.34*True
+GVCGAESCO SMALL CAPS, FI*GVCGaesco Small Caps Clase I, F.I.*2018 T3*2018-07-01*2018-09-30*6 (En una escala del 1 al 7)*0.0*-0.4**239559.32*134*0.0*3605894*false*15.0522*0.1*0.0*0.1*0.01*-4.1*9.03*0.19*True
+GVCGAESCO SMALL CAPS, FI*GVCGaesco Small Caps, F.I.*2018 S1*2018-01-01*2018-06-30*6 (En una escala del 1 al 7)*0.0*-0.4**3590291.99*2300*0.0*51567704*false*14.3631*0.84*0.0*0.84*0.01*-0.05*11.33*0.45*True
+GVCGAESCO SMALL CAPS, FI*GVCGaesco Small Caps Clase P, F.I.*2018 S1*2018-01-01*2018-06-30*6 (En una escala del 1 al 7)*0.0*-0.4**308095.63*10*0.0*4585695*false*14.884*0.5*0.0*0.5*0.01*0.13*11.3*0.27*True
+GVCGAESCO SMALL CAPS, FI*GVCGaesco Small Caps Clase I, F.I.*2018 S1*2018-01-01*2018-06-30*6 (En una escala del 1 al 7)*0.0*-0.4**230888.07*119*0.0*3624050*false*15.6961*0.2*0.0*0.2*0.03*0.29*11.26*0.13*True
+GVCGAESCO SMALL CAPS, FI*GVCGaesco Small Caps, F.I.*2018 T1*2018-01-01*2018-03-31*6 (En una escala del 1 al 7)*0.0*-0.4**3451087.15*2197*0.0*49592000*false*14.37*0.42*0.0*0.42*0.01*-3.99*13.54*0.51*True
+GVCGAESCO SMALL CAPS, FI*GVCGaesco Small Caps Clase P, F.I.*2018 T1*2018-01-01*2018-03-31*6 (En una escala del 1 al 7)*0.0*-0.4**308095.63*10*0.0*4580000*false*14.8645*0.25*0.0*0.25*0.01*-3.82*13.53*0.34*True
+GVCGAESCO SMALL CAPS, FI*GVCGaesco Small Caps Clase I, F.I.*2018 T1*2018-01-01*2018-03-31*6 (En una escala del 1 al 7)*0.0*-0.4**132244.49*90*0.0*2070000*false*15.6511*0.01*0.0*0.01*0.01*-3.67*13.53*0.15*True

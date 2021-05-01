@@ -1,0 +1,8 @@
+fondo*name*period*start_date*end_date*riesgo*rotacion*rentab_avg*remun_liq*n_participaciones*n_participes*beneficio*patrimonio*dividendos*valor_liq*comision_gest_pat*comision_gest_res*comision_gest_total*comision_depos*rentab_IIC_trim*volat_vl_trim*ratio_gastos_trim*clase
+MM GLOBAL, FI*MM Global, FI*2019 S2*2019-07-01*2019-12-31*5 (En una escala del 1 al 7)*0.05*0.0**30166.85*2*0.0*3025529*false*100.2932*0.68*0.0*0.68*0.05*0.08*2.71*0.44*False
+MM GLOBAL, FI*MM Global, FI*2019 T3*2019-07-01*2019-09-30*5 (En una escala del 1 al 7)*0.0*0.0**22874.15*2*0.0*2292322*false*100.2145*0.34*0.0*0.34*0.03*0.83*2.98*0.49*False
+MM GLOBAL, FI*MM Global, FI*2019 S1*2019-01-01*2019-06-30*5 (En una escala del 1 al 7)*0.0*0.0**13291.02*2*0.0*1321022*false*99.3921*0.29*0.0*0.29*0.02***0.54*False
+MM GLOBAL, FI*MM Global, FI*2020 S2*2020-07-01*2020-12-31*5 (En una escala del 1 al 7)*0.34*-0.12**29959.79*27*0.0*2783002*false*92.8912*0.68*0.0*0.68*0.05*8.95*11.95*0.41*False
+MM GLOBAL, FI*MM Global, FI*2020 T3*2020-07-01*2020-09-30*5 (En una escala del 1 al 7)*0.17*0.0**30068.39*29*0.0*2563744*false*85.2638*0.34*0.0*0.34*0.03*-2.2*5.56*0.4*False
+MM GLOBAL, FI*MM Global, FI*2020 S1*2020-01-01*2020-06-30*5 (En una escala del 1 al 7)*0.87*-0.24**30068.43*32*0.0*2621470*false*87.1835*0.67*0.0*0.67*0.05*4.77*9.18*0.4*False
+MM GLOBAL, FI*MM Global, FI*2020 T1*2020-01-01*2020-03-31*5 (En una escala del 1 al 7)*0.66*0.0**30068.52*40*0.0*2502034*false*83.2111*0.34*0.0*0.34*0.02*-17.03*15.4*0.39*False

@@ -1,33 +1,33 @@
 import datetime
 import streamlit as st
-from p_wrangling.m_wrangling import wrang_main,load_fondo,load_gen_data#,make_clickable
+from p_wrangling.m_wrangling import wrang_main,load_fondo,load_gen_data,create_data
 import altair as alt
 import os
 import pandas as pd
 
-def comp_fondos_web(final_fondo_sel):
+def comp_fondos_web():
   selection_col, display_col = st.beta_columns([1, 3])
-
+  final_fondo_sel=[]
   with selection_col:
     # st.header('Comparador de fondos')
     # st.text('Cargando base de datos')
-    global storage
+
     path = 'data/csv'
     path2='data/csv_gen_info'
     fondo_list=[file.split('.csv')[0] for file in os.listdir(path)]
     fondo_list.sort()
     #buscador de fondos
-    input_text = st.text_input('Escribe aqui el fondo')
+    #input_text = st.text_input('Escribe aqui el fondo')
 
-    if input_text:
-      storage = final_fondo_sel
-      output = [x for x in fondo_list if input_text.lower() in x.lower()]
-      fondos_selected = st.multiselect("Elige fondos a comparar", output)
-      final_fondo_sel +=fondos_selected
-    else:
-      fondos_selected = st.multiselect("Elige fondos a comparar", fondo_list)
-      final_fondo_sel +=fondos_selected
-      storage = final_fondo_sel
+    # if input_text:
+    #   storage = final_fondo_sel
+    #   output = [x for x in fondo_list if input_text.lower() in x.lower()]
+    #   fondos_selected = st.multiselect("Elige fondos a comparar", output)
+    #   final_fondo_sel +=fondos_selected
+    # else:
+    fondos_selected = st.multiselect("Elige fondos a comparar", fondo_list)
+    final_fondo_sel +=fondos_selected
+    storage = final_fondo_sel
 
     data=''
     data_clean=''
@@ -35,11 +35,11 @@ def comp_fondos_web(final_fondo_sel):
     for fondo in final_fondo_sel:
         if len(data)==0:
             data=load_fondo(fondo,path)
-            data_clean = wrang_main(data)
+            data_clean = create_data(wrang_main(data))
             gen_data=load_gen_data(fondo,path2)
         else:
           data=pd.concat([data,load_fondo(fondo,path)])
-          data_clean = wrang_main(data)
+          data_clean = create_data(wrang_main(data))
           gen_data = pd.concat([gen_data, load_gen_data(fondo, path2)])
 
     if len(data_clean)>0:
@@ -81,5 +81,9 @@ def comp_fondos_web(final_fondo_sel):
     with graphs:    #hacer gráficos!!!!
       if len(data_clean) > 0:
         for var in input_vars:
-          c= alt.Chart(data_filtered[['fondo','period',var]]).mark_line(point=True).encode(x='period', y=var, color='fondo', tooltip=['fondo','period',var])
-          st.altair_chart(c, use_container_width=True)
+            if data_filtered.clase.sum()>0:
+                fondo_clase='name'
+            else:
+                fondo_clase = 'fondo'
+            c= alt.Chart(data_filtered[['fondo','name','period',var]]).mark_line(point=True).encode(x='period', y=var, color=fondo_clase, tooltip=['fondo','name','period',var])
+            st.altair_chart(c, use_container_width=True)

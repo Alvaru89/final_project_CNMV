@@ -46,6 +46,7 @@ def get_info_fondo(fondo,link):
         # print(fondo, 'skipped!')
         return
     # print(f'extracting {fondo}')
+    print(f'starting time: {datetime.datetime.now()}')
     web_fondo=requests.get(link+'&vista=0')
     sopa_fondo = BeautifulSoup(web_fondo.content, 'html.parser')
     registro_CNMV = sopa_fondo.find('td', {'data-th': "Nº Registro oficial"}).text
@@ -61,7 +62,7 @@ def get_info_fondo(fondo,link):
     depos = sopa_fondo.find('table', {'id': "ctl00_ContentPrincipal_gridDepositaria"}).find('td', {
         'data-th': "Denominación"}).text
     try: ISIN = sopa_fondo.find('td', {'data-th': "ISIN"}).find('a').text
-    except: ISIN = False
+    except: ISIN = 'N/D'
 
     temp_info=pd.DataFrame({'NIF':[nif],'ISIN': [ISIN],'registro_CNMV':[registro_CNMV],'fecha_registro':[fecha_reg],'gestora': [gestora], 'depos': [depos]})
     if type(temp_info)!= bool:  #exportado
@@ -224,7 +225,7 @@ def xml_scrap(xml_soup, nif, fondo):
             'comision_gest_pat': comision_gest_pat, 'comision_gest_res': comision_gest_res,
             'comision_gest_total': comision_gest_total, 'comision_depos': comision_depos,
             'rentab_IIC_trim': rentab_IIC_trim,
-            'volat_vl_trim': volat_vl_trim, 'ratio_gastos_trim': ratio_gastos_trim}
+            'volat_vl_trim': volat_vl_trim, 'ratio_gastos_trim': ratio_gastos_trim, 'clase':False}
 
 
 def xml_scrap_clase(xml_soup, nif, fondo, i):
@@ -248,7 +249,7 @@ def xml_scrap_clase(xml_soup, nif, fondo, i):
             enddate = str(context_ref_info.find(['xbrli:enddate', 'enddate']).text)
             start_date, end_date, period_type, period_number = date_parser(startdate, enddate)
     except:context_ref=f'FIM_{full_period[0]}{period_number}{start_date.year}_V-{nif}_da'
-    full_period = f'{start_date.year} {period_type} {period_number}'
+    full_period = f'{start_date.year} {period_type}{period_number}'
 
     context_ref2=f'{context_ref[:-2]}ia'
     context_ref3=f'{context_ref[:-2]}daq'
@@ -330,7 +331,7 @@ def xml_scrap_clase(xml_soup, nif, fondo, i):
             'comision_gest_pat': comision_gest_pat, 'comision_gest_res': comision_gest_res,
             'comision_gest_total': comision_gest_total, 'comision_depos': comision_depos,
             'rentab_IIC_trim': rentab_IIC_trim,
-            'volat_vl_trim': volat_vl_trim, 'ratio_gastos_trim': ratio_gastos_trim}
+            'volat_vl_trim': volat_vl_trim, 'ratio_gastos_trim': ratio_gastos_trim, 'clase':True}
 
 
 def date_parser(startdate,enddate):

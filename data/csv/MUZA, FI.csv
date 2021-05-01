@@ -1,0 +1,8 @@
+fondo*name*period*start_date*end_date*riesgo*rotacion*rentab_avg*remun_liq*n_participaciones*n_participes*beneficio*patrimonio*dividendos*valor_liq*comision_gest_pat*comision_gest_res*comision_gest_total*comision_depos*rentab_IIC_trim*volat_vl_trim*ratio_gastos_trim*clase
+MUZA, FI*MUZA, FI*2019 S2*2019-07-01*2019-12-31*5, en una escala del 1 al 7.*0.0*-0.4**331344.89*36*0.0*3501602*false*10.5678*0.5*1.21*1.71*0.03*7.82*11.4*0.47*False
+MUZA, FI*MUZA, FI*2019 T3*2019-07-01*2019-09-30*5, en una escala del 1 al 7.*0.0*-0.3**61817.95*19*0.0*605885*false*9.8011*0.25*0.0*0.25*0.02*-1.8*11.83*1.16*False
+MUZA, FI*MUZA, FI*2019 S1*2019-01-01*2019-06-30*5, en una escala del 1 al 7.*0.0*0.0**30000.0*1*0.0*299416*false*9.9805*0.02*0.0*0.02*0.0****False
+MUZA, FI*MUZA, FI*2020 S2*2020-07-01*2020-12-31*6, en una escala del 1 al 7.*0.54*-0.4**657218.86*105*0.0*6945605*false*10.5682*0.5*0.0*0.5*0.04*32.54*24.02*0.3*False
+MUZA, FI*MUZA, FI*2020 T3*2020-07-01*2020-09-30*5, en una escala del 1 al 7.*0.08*-0.4**655251.39*100*0.0*5224799*false*7.9737*0.25*0.0*0.25*0.02*-2.55*15.98*0.29*False
+MUZA, FI*MUZA, FI*2020 S1*2020-01-01*2020-06-30*5, en una escala del 1 al 7.*0.27*-0.4**667260.73*97*0.0*5459623*false*8.1821*0.5*0.0*0.5*0.03*16.25*30.99*0.3*False
+MUZA, FI*MUZA, FI*2020 T1*2020-01-01*2020-03-31*5, en una escala del 1 al 7.*0.16*-0.4**600191.29*50*0.0*4224322*false*7.0383*0.25*0.0*0.25*0.02*-33.4*39.04*0.3*False

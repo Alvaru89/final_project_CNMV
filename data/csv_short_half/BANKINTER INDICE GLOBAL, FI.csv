@@ -1,0 +1,22 @@
+fondo*name*period*start_date*end_date*riesgo*rotacion*rentab_avg*remun_liq*n_participaciones*n_participes*beneficio*patrimonio*dividendos*valor_liq*comision_gest_pat*comision_gest_res*comision_gest_total*comision_depos*rentab_IIC_trim*volat_vl_trim*ratio_gastos_trim
+BANKINTER INDICE GLOBAL, FI*CLASE R*2018 S 2*2018-07-01*2018-12-31*5 en una escala del 1 al 7*0.0*-0.14**5666.18*40*0.0*543378*false*95.8985*0.5*0.0*0.5*0.05*-14.74*18.31*0.52
+BANKINTER INDICE GLOBAL, FI*CLASE R*2018 T 3*2018-07-01*2018-09-30*5, en una escala del 1 al 7*0.3*-0.09**5116.84*33*0.0*575523*false*112.4762*0.25*0.0*0.25*0.03*3.65*7.65*0.46
+BANKINTER INDICE GLOBAL, FI*CLASE C*2018 T 3*2018-07-01*2018-09-30*5, en una escala del 1 al 7*0.3*-0.09**0.0*0*0.0*0*false*0.0*0.0*0.0*0.0*0.0*"[<iic-com:rentabilidadiic contextref=""FIM_T32018_V-88039342_da"" decimals=""2"" unitref=""pure"">3.65</iic-com:rentabilidadiic>]"*"[<iic-com-fon:volatilidadvalorliquidativo contextref=""FIM_T32018_V-88039342_da"" decimals=""2"" unitref=""pure"">7.65</iic-com-fon:volatilidadvalorliquidativo>]"*0.0
+BANKINTER INDICE GLOBAL, FI*CLASE R*2018 S 1*2018-01-01*2018-06-30*5 en una escala del 1 al 7*0.0*-0.25**3753.21*17*0.0*407267*false*108.5118*0.28*0.0*0.28*0.03*8.69*19.14*1.73
+BANKINTER INDICE GLOBAL, FI*CLASE C*2018 S 1*2018-01-01*2018-06-30*5 en una escala del 1 al 7*0.0*-0.25**0.0*0*0.0*0*false*0.0*0.0*0.0*0.0*0.0*"[<iic-com:rentabilidadiic contextref=""FIM_S12018_V-88039342_daq"" decimals=""2"" unitref=""pure"">8.69</iic-com:rentabilidadiic>]"*"[<iic-com-fon:volatilidadvalorliquidativo contextref=""FIM_S12018_V-88039342_daq"" decimals=""2"" unitref=""pure"">19.14</iic-com-fon:volatilidadvalorliquidativo>]"*0.0
+BANKINTER INDICE GLOBAL, FI*BANKINTER INDICE GLOBAL FI*2018 T1*2018-01-01*2018-03-31*5 en una escala del 1 al 7*0.0*0.0**3000.0*1*0.0*299495*false*99.8318*0.02*0.0*0.02*0.0***0.13
+BANKINTER INDICE GLOBAL, FI*CLASE R*2019 T 3*2019-07-01*2019-09-30*5 en una escala del 1 al 7*0.0*-0.25**20833.33*116*0.0*2319745*false*111.3478*0.25*0.0*0.25*0.03*0.36*11.99*0.37
+BANKINTER INDICE GLOBAL, FI*CLASE C*2019 T 3*2019-07-01*2019-09-30*5 en una escala del 1 al 7*0.0*-0.25**124.85*6*0.0*12996*false*104.096*0.13*0.0*0.13*0.03*0.49*11.99*-7.2
+BANKINTER INDICE GLOBAL, FI*CLASE R*2019 S 1*2019-01-01*2019-06-30*5 en una escala del 1 al 7*0.0*-0.23**19982.94*107*0.0*2217065*false*110.9479*0.49*0.0*0.49*0.05*3.12*10.24*0.31
+BANKINTER INDICE GLOBAL, FI*CLASE C*2019 S 1*2019-01-01*2019-06-30*5 en una escala del 1 al 7*0.0*-0.23**134.62*4*0.0*13946*false*103.5922*0.17*0.0*0.17*0.03*0.0*0.0*0.13
+BANKINTER INDICE GLOBAL, FI*CLASE R*2019 T 1*2019-01-01*2019-03-31*5 en una escala del 1 al 7*0.0*-0.22**12613.98*78*0.0*1357179*false*107.5933*0.24*0.0*0.24*0.02*12.19*11.23*0.34
+BANKINTER INDICE GLOBAL, FI*CLASE C*2019 T 1*2019-01-01*2019-03-31*5 en una escala del 1 al 7*0.0*-0.22**20306.36*560*0.0*2037403*false*100.3332*0.05*0.0*0.05*0.01*0.0*0.0*0.12
+BANKINTER INDICE GLOBAL, FI*CLASE C*2018 S 2*2018-07-01*2018-12-31*5 en una escala del 1 al 7*0.0*-0.14**0.0*0*0.0*0*false*0.0*0.0*0.0*0.0*0.0*0.0*0.0*0.0
+BANKINTER INDICE GLOBAL, FI*CLASE R*2020 S 2*2020-07-01*2020-12-31*6, en una escala del 1 al 7*0.0*-0.33**27116.47*224*0.0*3528467*false*130.1227*0.5*0.0*0.5*0.05*11.07*15.08*0.33
+BANKINTER INDICE GLOBAL, FI*CLASE C*2020 S 2*2020-07-01*2020-12-31*6, en una escala del 1 al 7*0.0*-0.33**3567.17*113*0.0*436665*false*122.4123*0.25*0.0*0.25*0.05*11.21*15.08*0.21
+BANKINTER INDICE GLOBAL, FI*CLASE R*2020 T 3*2020-07-01*2020-09-30*5 en una escala del 1 al 7*0.0*-0.32**29854.81*211*0.0*3497603*false*117.1538*0.25*0.0*0.25*0.03*6.74*17.22*0.3
+BANKINTER INDICE GLOBAL, FI*CLASE C*2020 T 3*2020-07-01*2020-09-30*5 en una escala del 1 al 7*0.0*-0.32**3821.99*123*0.0*420700*false*110.0734*0.13*0.0*0.13*0.03*6.87*17.22*0.19
+BANKINTER INDICE GLOBAL, FI*CLASE  R*2020 S 1*2020-01-01*2020-06-30*5 en una escala del 1 al 7*0.0*-0.26**35434.04*220*0.0*3889136*false*109.7571*0.5*0.0*0.5*0.05*15.52*29.22*0.3
+BANKINTER INDICE GLOBAL, FI*CLASE  C*2020 S 1*2020-01-01*2020-06-30*5 en una escala del 1 al 7*0.0*-0.26**4011.43*127*0.0*413154*false*102.9942*0.25*0.0*0.25*0.05*15.66*29.22*0.2
+BANKINTER INDICE GLOBAL, FI*CLASE R*2020 T 1*2020-01-01*2020-03-31*5 en una escala del 1 al 7*0.0*-0.25**41636.37*227*0.0*3956072*false*95.0148*0.25*0.0*0.25*0.02*-19.8*39.52*0.3
+BANKINTER INDICE GLOBAL, FI*CLASE C*2020 T 1*2020-01-01*2020-03-31*5 en una escala del 1 al 7*0.0*-0.25**124.24*4*0.0*11064*false*89.0487*0.12*0.0*0.12*0.02*-19.7*39.52*0.17

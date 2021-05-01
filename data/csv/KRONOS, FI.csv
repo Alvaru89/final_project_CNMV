@@ -1,0 +1,15 @@
+fondo*name*period*start_date*end_date*riesgo*rotacion*rentab_avg*remun_liq*n_participaciones*n_participes*beneficio*patrimonio*dividendos*valor_liq*comision_gest_pat*comision_gest_res*comision_gest_total*comision_depos*rentab_IIC_trim*volat_vl_trim*ratio_gastos_trim*clase
+KRONOS, FI*Kronos FI*2017 S2*2017-07-01*2017-12-31*5 (En una escala del 1 al 7)*0.0*0.0**30252.28*4*0.0*2889202*false*95.5036*0.65*1.29*0.65*0.05***0.6*False
+KRONOS, FI*Kronos FI*2017 T3*2017-07-01*2017-09-30*5 (En una escala del 1 al 7)*0.0*0.0**3000.0*1*0.0*299656*false*99.8854*0.0*0.0*0.0*0.0***0.0*False
+KRONOS, FI*Kronos FI*2018 S2*2018-07-01*2018-12-31*5 (En una escala del 1 al 7)*5.15*0.0**30230.32*6*0.0*2671996*false*88.388*0.68*0.0*0.68*0.05*-3.86*17.96*0.41*False
+KRONOS, FI*Kronos FI*2018 T3*2018-07-01*2018-09-30*5 (En una escala del 1 al 7)*6.68*0.0**30222.66*5*0.0*2778705*false*91.9411*0.34*0.0*0.34*0.03*2.24*4.99*0.42*False
+KRONOS, FI*Kronos FI*2018 S1*2018-01-01*2018-06-30*5 (En una escala del 1 al 7)*4.55*0.0**30232.68*4*0.0*2718833*false*89.9302*0.67*0.0*0.67*0.05*-0.52*6.02*0.36*False
+KRONOS, FI*Kronos FI*2018 T1*2018-01-01*2018-03-31*5 (En una escala del 1 al 7)*1.78*0.0**30232.68*4*0.0*2733000*false*90.4043*0.33*0.0*0.33*0.02*-5.34*32.05*0.55*False
+KRONOS, FI*Kronos FI*2019 S2*2019-07-01*2019-12-31*5 (En una escala del 1 al 7)*0.0*0.0**167579.91*404*0.0*14855290*false*88.646*0.53*0.0*0.53*0.05*-0.17*0.04*0.02*False
+KRONOS, FI*Kronos FI*2019 T3*2019-07-01*2019-09-30*5 (En una escala del 1 al 7)*0.0*0.0**9.96*32*0.0*885*false*88.7983*0.35*0.0*0.35*0.03*0.82*1.7*0.41*False
+KRONOS, FI*Kronos FI*2019 S1*2019-01-01*2019-06-30*5 (En una escala del 1 al 7)*4.09*0.0**30223.58*34*0.0*2662102*false*88.0803*0.67*0.0*0.67*0.05*-1.27*3.5*0.42*False
+KRONOS, FI*Kronos FI*2019 T1*2019-01-01*2019-03-31*5 (En una escala del 1 al 7)*1.62*0.0**30231.23*35*0.0*2697047*false*89.2139*0.33*0.0*0.33*0.02*0.93*2.73*0.39*False
+KRONOS, FI*Kronos FI*2020 S2*2020-07-01*2020-12-31*5 (En una escala del 1 al 7)*0.0*-0.36**55660.59*426*0.0*5109906*false*91.8047*0.0*0.0*0.0*0.05*1.12*4.96*0.05*False
+KRONOS, FI*Kronos FI*2020 T3*2020-07-01*2020-09-30*5 (En una escala del 1 al 7)*0.8*0.0**36309.4*346*0.0*3296453*false*90.7879*0.0*0.0*0.0*0.02*1.55*4.93*0.13*False
+KRONOS, FI*Kronos FI*2020 S1*2020-01-01*2020-06-30*5 (En una escala del 1 al 7)*0.0*-0.12**11523.81*157*0.0*1030258*false*89.4025*0.0*0.0*0.0*0.05*-0.17*0.29*0.15*False
+KRONOS, FI*Kronos FI*2020 T1*2020-01-01*2020-03-31*5 (En una escala del 1 al 7)*0.0*0.0**20744.94*94*0.0*1857727*false*89.5508*0.0*0.0*0.0*0.03*1.02*2.1*0.04*False

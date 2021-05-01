@@ -1,5 +1,5 @@
-fondo*name*period*start_date*end_date*riesgo*rotacion*rentab_avg*remun_liq*n_participaciones*n_participes*beneficio*patrimonio*dividendos*valor_liq*comision_gest_pat*comision_gest_res*comision_gest_total*comision_depos*rentab_IIC_trim*volat_vl_trim*ratio_gastos_trim
-BEKA OPTIMA GLOBAL, FI*BEKA OPTIMA GLOBAL FI*2020 S2*2020-07-01*2020-12-31*7*0.0*-0.4**284419.89*1717*0.0*28208490*false*99.179*0.5**0.5*0.04*11.81*14.23*0.35
-BEKA OPTIMA GLOBAL, FI*BEKA OPTIMA GLOBAL FI*2020 T3*2020-07-01*2020-09-30*7*0.0*-0.4**284307.74*1694*0.0*25219966*false*88.7066*0.25**0.25*0.02*0.04*14.98*0.35
-BEKA OPTIMA GLOBAL, FI*BEKA OPTIMA GLOBAL FI*2020 S1*2020-01-01*2020-06-30*7*0.0*-0.4**275491.89*1725*0.0*24428583*false*88.6726*0.49**0.49*0.04*12.94*26.12*0.34
-BEKA OPTIMA GLOBAL, FI*BEKA OPTIMA GLOBAL FI*2020 T1*2020-01-01*2020-03-31*7*0.0*-0.4**247252.08*1647*0.0*19412829*false*78.5143*0.25**0.25*0.02*-22.0*41.96*0.34
+fondo*name*period*start_date*end_date*riesgo*rotacion*rentab_avg*remun_liq*n_participaciones*n_participes*beneficio*patrimonio*dividendos*valor_liq*comision_gest_pat*comision_gest_res*comision_gest_total*comision_depos*rentab_IIC_trim*volat_vl_trim*ratio_gastos_trim*clase
+BEKA OPTIMA GLOBAL, FI*BEKA OPTIMA GLOBAL FI*2020 S2*2020-07-01*2020-12-31*7*0.0*-0.4**284419.89*1717*0.0*28208490*false*99.179*0.5**0.5*0.04*11.81*14.23*0.35*False
+BEKA OPTIMA GLOBAL, FI*BEKA OPTIMA GLOBAL FI*2020 T3*2020-07-01*2020-09-30*7*0.0*-0.4**284307.74*1694*0.0*25219966*false*88.7066*0.25**0.25*0.02*0.04*14.98*0.35*False
+BEKA OPTIMA GLOBAL, FI*BEKA OPTIMA GLOBAL FI*2020 S1*2020-01-01*2020-06-30*7*0.0*-0.4**275491.89*1725*0.0*24428583*false*88.6726*0.49**0.49*0.04*12.94*26.12*0.34*False
+BEKA OPTIMA GLOBAL, FI*BEKA OPTIMA GLOBAL FI*2020 T1*2020-01-01*2020-03-31*7*0.0*-0.4**247252.08*1647*0.0*19412829*false*78.5143*0.25**0.25*0.02*-22.0*41.96*0.34*False

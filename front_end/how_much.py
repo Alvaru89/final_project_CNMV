@@ -31,9 +31,8 @@ def how_much():
     periodo_sel=''
     if len(data)==0 and fondo_selected:
         data=load_fondo(fondo_selected ,path)
-        data_clean = wrang_main(data)
-        data_clean=data_clean[['name','period','rentab_avg','comision_gest_pat',
-                              'comision_gest_res','comision_gest_total','comision_depos','year','period_type']]
+        full_created=pd.read_csv(f'data/created_data.csv', sep='*', index=False)
+        data_clean = pd.concat([wrang_main(data), wrang_main(full_created[full_created.fondo==fondo_selected]]))
 
 
 
@@ -54,9 +53,9 @@ def how_much():
         mask2=data_clean.period>=periodo_sel
         data_filtered=data_clean[mask1&mask2]
         data_filtered.reset_index(drop=True,inplace=True)
+        data_filtered.sort_values('period',ascending=True,inplace=True)
         inversion=calculator(float(input_qty), data_filtered)
         data_filtered['inversion']=inversion
-
 
     with display_col:
       info = st.beta_container()
@@ -66,8 +65,8 @@ def how_much():
 
           if len(data_filtered) > 0 and periodo_sel!='':
               data_filtered = data_filtered.groupby('period').mean()
-              st.write(f'Si hubieras invertido {input_qty}€ en {fondo_selected} en {periodo_sel}, ahora tendrías {list(data_filtered.inversion)[-1]}')
-              st.dataframe(data_filtered[['inversion','rentab_avg','comision_gest_pat','comision_gest_res','comision_gest_total','comision_depos']])
+              st.write(f'Si hubieras invertido {input_qty}€ en {fondo_selected} en {periodo_sel}, ahora tendrías aproximadamente {int(list(data_filtered.inversion)[-1])}')
+              st.dataframe(data_filtered[['inversion','rentab_avg','beneficio','comision_gest_pat','comision_gest_res','comision_gest_total','comision_depos']])
 
       with graphs:  # hacer gráficos!!!!
         if len(data_filtered) > 0:
@@ -80,23 +79,33 @@ def how_much():
 def calculator (cantidad,df):
     arr=[cantidad]
     for i in range(1,len(df)):
-        qty=arr[i-1]
+        qty=arr[-1]
         delta=qty*df.rentab_avg[i]/100
 
+        if str(df.beneficio[i])!='nan' and df.beneficio[i]!=0:
+            benef = qty*df.beneficio[i]/(df.patrimonio[i]/df.n_participaciones[i])*0.79
+            #asumida una tributacion del 21%
+        else:
+            benef=0
+
         if str(df.comision_gest_pat[i])!='nan':
-            com_pat = -qty*df.comision_gest_pat[i]/100
+            com_pat = qty*df.comision_gest_pat[i]/100
         else:
             com_pat=0
-        if str(df.comision_gest_res[i])!='nan' and delta>0:
-            com_res = -delta*df.comision_gest_res[i]/100
+        if str(df.comision_gest_res[i])!='nan' and delta > 0:
+            com_res = delta*df.comision_gest_res[i]/100
         else:
             com_res=0
 
         if str(df.comision_depos[i])!='nan':
-            com_depos = -(qty + delta) * df.comision_depos[i]/100
+            com_depos = qty* df.comision_depos[i]/100
         else:com_depos=0
 
-        com_total = -(qty + delta) * df.comision_gest_total[i]/100
-        if com_total < com_pat + com_res: arr.append(qty+delta+com_total+com_depos)
-        else:arr.append(qty+delta+com_pat+com_res+com_depos)
+        com_total = qty * df.comision_gest_total[i]/100
+
+        if com_total < com_pat + com_res:
+            new_qty=qty+delta+benef-com_total-com_depos
+        else:new_qty=qty+delta+benef-com_pat-com_res-com_depos
+        arr.append(new_qty)
+
     return arr

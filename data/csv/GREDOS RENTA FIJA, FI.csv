@@ -1,0 +1,8 @@
+fondo*name*period*start_date*end_date*riesgo*rotacion*rentab_avg*remun_liq*n_participaciones*n_participes*beneficio*patrimonio*dividendos*valor_liq*comision_gest_pat*comision_gest_res*comision_gest_total*comision_depos*rentab_IIC_trim*volat_vl_trim*ratio_gastos_trim*clase
+GREDOS RENTA FIJA, FI*GREDOS RENTA FIJA, FI*2019 S2*2019-07-01*2019-12-31*2, en una escala del 1 al 7.*0.0*-0.32**16262995.67*164*0.0*16303560*false*1.0025*0.15**0.15*0.05*0.51*0.85*0.13*False
+GREDOS RENTA FIJA, FI*GREDOS RENTA FIJA, FI*2019 T3*2019-07-01*2019-09-30*2, en una escala del 1 al 7.*0.0*-0.25**14681648.33*44*0.0*14644143*false*0.9974*0.07**0.07*0.02*0.14*0.73*0.16*False
+GREDOS RENTA FIJA, FI*GREDOS RENTA FIJA, FI*2019 S1*2019-01-01*2019-06-30*2, en una escala del 1 al 7.*0.0*-0.3**300000.0*1*0.0*298819*false*0.9961*0.01**0.01*0.0*-0.39**0.39*False
+GREDOS RENTA FIJA, FI*GREDOS RENTA FIJA, FI*2020 S2*2020-07-01*2020-12-31*2, en una escala del 1 al 7.*0.0*-0.44**25871692.81*201*0.0*26069043*false*1.0076*0.15**0.15*0.05*2.37*1.32*0.11*False
+GREDOS RENTA FIJA, FI*GREDOS RENTA FIJA, FI*2020 T3*2020-07-01*2020-09-30*2, en una escala del 1 al 7.*0.0*-0.38**26601751.3*195*0.0*26184299*false*0.9843*0.08**0.08*0.03*1.43*1.25*0.12*False
+GREDOS RENTA FIJA, FI*GREDOS RENTA FIJA, FI*2020 S1*2020-01-01*2020-06-30*2, en una escala del 1 al 7.*0.0*-0.4**23383677.73*186*0.0*22692405*false*0.9704*0.15**0.15*0.05*4.35*4.02*0.12*False
+GREDOS RENTA FIJA, FI*GREDOS RENTA FIJA, FI*2020 T1*2020-01-01*2020-03-31*2, en una escala del 1 al 7.*0.0*-0.34**21025441.13*183*0.0*19553501*false*0.93*0.07**0.07*0.02*-7.23*7.66*0.13*False

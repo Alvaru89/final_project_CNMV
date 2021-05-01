@@ -1,0 +1,8 @@
+fondo*name*period*start_date*end_date*riesgo*rotacion*rentab_avg*remun_liq*n_participaciones*n_participes*beneficio*patrimonio*dividendos*valor_liq*comision_gest_pat*comision_gest_res*comision_gest_total*comision_depos*rentab_IIC_trim*volat_vl_trim*ratio_gastos_trim*clase
+TRUE VALUE SMALL CAPS, FI*CLASE A*2020 S2*2020-07-01*2020-12-31*6*1.7*-0.5**835447.17*1330*0.0*13373175*false*16.0072*0.38*0.0*0.38*0.05*31.82*14.99*0.22*True
+TRUE VALUE SMALL CAPS, FI*CLASE A*2020 T3*2020-07-01*2020-09-30*6*0.64*-0.5**855054.19*1361*0.0*10382977*false*12.1431*0.19*0.0*0.19*0.03*8.75*13.1*0.23*True
+TRUE VALUE SMALL CAPS, FI*CLASE B*2020 T3*2020-07-01*2020-09-30*6*0.64*-0.5**69877.47*329*0.0*857152*false*12.2665*0.24*0.0*0.24*0.02*8.67*13.1*0.28*True
+TRUE VALUE SMALL CAPS, FI*CLASE A*2020 S1*2020-01-01*2020-06-30*6*0.0*-0.5**874555.4*1415*0.0*9765404*false*11.1661*0.38*0.0*0.38*0.05*12.01*18.09*0.26*True
+TRUE VALUE SMALL CAPS, FI*CLASE B*2020 S1*2020-01-01*2020-06-30*6*0.0*-0.5**9940.47*63*0.0*112209*false*11.2881*0.68*0.0*0.68*0.05*"[<iic-com:rentabilidadiic contextref=""FIM_S12020_V-88585815_daq"" decimals=""2"" unitref=""pure"">12.01</iic-com:rentabilidadiic>]"*"[<iic-com-fon:volatilidadvalorliquidativo contextref=""FIM_S12020_V-88585815_daq"" decimals=""2"" unitref=""pure"">18.09</iic-com-fon:volatilidadvalorliquidativo>]"*0.13*True
+TRUE VALUE SMALL CAPS, FI*CLASE A*2020 T1*2020-01-01*2020-03-31*6*0.0*-0.5**298589.18*371*0.0*2976490*false*9.9685*0.02*0.0*0.02*0.0*[]*[]*0.09*True
+TRUE VALUE SMALL CAPS, FI*CLASE B*2020 T1*2020-01-01*2020-03-31*6*0.0*-0.5**0.0*0*0.0*0*false*0.0*0.0*0.0*0.0*0.0*[]*[]*0.0*True
