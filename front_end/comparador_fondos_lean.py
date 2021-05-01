@@ -34,8 +34,8 @@ def comp_fondos_web():
     gen_data = ''
     for fondo in final_fondo_sel:
         if len(data)==0:
-            data=load_fondo(fondo,path)
-            data_clean = create_data(wrang_main(data))
+            data=load_fondo(fondo,path,created=True)
+            data_clean = wrang_main(data)
             gen_data=load_gen_data(fondo,path2)
         else:
           data=pd.concat([data,load_fondo(fondo,path)])
@@ -85,5 +85,5 @@ def comp_fondos_web():
                 fondo_clase='name'
             else:
                 fondo_clase = 'fondo'
-            c= alt.Chart(data_filtered[['fondo','name','period',var]]).mark_line(point=True).encode(x='period', y=var, color=fondo_clase, tooltip=['fondo','name','period',var])
+            c= alt.Chart(data_filtered[['fondo','name','period',var]].dropna()).mark_line(point=True).encode(x='period', y=var, color=fondo_clase, tooltip=['fondo','name','period',var])
             st.altair_chart(c, use_container_width=True)

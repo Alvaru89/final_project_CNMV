@@ -12,6 +12,6 @@ def home():
 
         - **_Top 5 fondos_**: permite consultar los fondos con mejores rentabilidad por periodo. Por favor, se paciente ya que requiere 2-3 minutos para cargar toda la base de datos.
 
-        Espero que te sea de mucha ayuda.
+        Espero que te sea de mucha ayuda y recuerda *'rentabilidades pasadas no garantizan rentabilidades futuras'*.
 
         ''')

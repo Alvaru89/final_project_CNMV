@@ -10,12 +10,14 @@ def top5():
         data_clean=wrang_main(data)
 
         year_start=int(data_clean.year.min())
-        year_end = int(data_clean.year.max())
+        year_end = int(data_clean.year.max())-1
         year_input = st.selectbox("Año", options= [x for x in range(year_start,year_end+1)][::-1], index=0)
 
         periodo_input = st.selectbox("Trimestre", options= ['T1','T2','T3','T4','S1','S2', 'Y'], index=0)
-
-        period_full=f'{year_input} {periodo_input}'
+        if periodo_input!='Y':
+            period_full=f'{year_input} {periodo_input}'
+        else:
+            period_full = f'{year_input}'
         data_filtered=data_clean[data_clean.period == period_full]
 
     with display_col:

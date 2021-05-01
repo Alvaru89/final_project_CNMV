@@ -50,6 +50,8 @@ If you want to run the streamlit server, you need to run the main_streamlit.py w
 - [Pandas](https://pandas.pydata.org/pandas-docs/stable/index.html): for data treatment
 - [requests](https://requests.readthedocs.io/en/master/): for api and html queries
 - [BeautifulSoup](https://www.crummy.com/software/BeautifulSoup/bs4/doc/): for webscraping the html code
-- [datetime](): to work with date values
+- [datetime](https://docs.python.org/3/library/datetime.html): to work with date values
 - [tqdm](https://tqdm.github.io/): for progress visualization
 - [Streamlit](https://docs.streamlit.io/en/stable/): to create the website
+- [Altair](https://altair-viz.github.io/): for some special visualizations in Streamlit.
+- [Telegram](https://core.telegram.org/bots): to get an alert when the script has stopped

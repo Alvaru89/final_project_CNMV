@@ -53,58 +53,78 @@ def how_much():
         data_filtered=data_clean[mask1&mask2]
         data_filtered.reset_index(drop=True,inplace=True)
         data_filtered.sort_values('period',ascending=True,inplace=True)
-        inversion=calculator(float(input_qty), data_filtered)
-        data_filtered['inversion']=inversion
+        #inversion_rentab=calculator_rentab(float(input_qty), data_filtered)
+        #data_filtered['inversion_rentab']=inversion_rentab
+        inversion_vl=calculator_vl(float(input_qty), data_filtered)
+        data_filtered['inversion']=inversion_vl
 
     with display_col:
       info = st.beta_container()
       graphs = st.beta_container()
 
       with info:
+          # with st.beta_expander('Disclaimer'):
+          #     st.write('Estos valores son solo una aproximación calculada en base a la fórmula simplificada:')
+          #     st.write('Valor de la inversión = Valor previo + Ganancias (rentabilidad y beneficios) - Comisiones (gestora y depositaria)')
 
           if len(data_filtered) > 0 and periodo_sel!='':
               data_filtered = data_filtered.groupby('period').mean()
-              st.write(f'Si hubieras invertido {input_qty}€ en {fondo_selected} en {periodo_sel}, ahora tendrías aproximadamente {int(list(data_filtered.inversion)[-1])}')
-              st.dataframe(data_filtered[['inversion','rentab_avg','beneficio','comision_gest_pat','comision_gest_res','comision_gest_total','comision_depos']])
+              st.markdown(f'Si hubieras invertido **{input_qty}€** en **{fondo_selected}** en **{periodo_sel}**, ahora tendrías aproximadamente **{int(list(data_filtered.inversion)[-1])}€**.')
+              st.dataframe(data_filtered[['inversion','valor_liq','rentab_avg','beneficio','comision_gest_pat','comision_gest_res','comision_gest_total','comision_depos']])
 
       with graphs:  # hacer gráficos!!!!
         if len(data_filtered) > 0:
-            st.bar_chart(data_filtered['inversion'])
+            st.area_chart(data_filtered[['inversion']])
+            st.line_chart(data_filtered['valor_liq'])
             st.line_chart(data_filtered['rentab_avg'])
             comisiones=['comision_gest_pat','comision_gest_res','comision_gest_total','comision_depos']
             st.line_chart(data_filtered[comisiones])
 
 
-def calculator (cantidad,df):
+def calculator_rentab (cantidad,df):
     arr=[cantidad]
     for i in range(1,len(df)):
         qty=arr[-1]
         delta=qty*df.rentab_avg[i]/100
+        #La rentabilidad ya incluye las comisiones.
 
-        if str(df.beneficio[i])!='nan' and df.beneficio[i]!=0:
-            benef = qty*df.beneficio[i]/(df.patrimonio[i]/df.n_participaciones[i])*0.79
-            #asumida una tributacion del 21%
-        else:
-            benef=0
+        # if str(df.beneficio[i])!='nan' and df.beneficio[i]!=0:
+        #     benef = qty*df.beneficio[i]/(df.patrimonio[i]/df.n_participaciones[i])*0.79
+        #     #asumida una tributacion del 21%
+        # else:
+        #     benef=0
+        #
+        # if str(df.comision_gest_pat[i])!='nan':
+        #     com_pat = qty*df.comision_gest_pat[i]/100
+        # else:
+        #     com_pat=0
+        # if str(df.comision_gest_res[i])!='nan' and delta > 0:
+        #     com_res = delta*df.comision_gest_res[i]/100
+        # else:
+        #     com_res=0
+        #
+        # if str(df.comision_depos[i])!='nan':
+        #     com_depos = qty* df.comision_depos[i]/100
+        # else:com_depos=0
+        #
+        # com_total = qty * df.comision_gest_total[i]/100
+        #
+        # if com_total < com_pat + com_res:
+        #     new_qty=qty+delta+benef-com_total-com_depos
+        # else:new_qty=qty+delta+benef-com_pat-com_res-com_depos
+        new_qty=qty+delta
+        arr.append(new_qty)
 
-        if str(df.comision_gest_pat[i])!='nan':
-            com_pat = qty*df.comision_gest_pat[i]/100
-        else:
-            com_pat=0
-        if str(df.comision_gest_res[i])!='nan' and delta > 0:
-            com_res = delta*df.comision_gest_res[i]/100
-        else:
-            com_res=0
+    return arr
 
-        if str(df.comision_depos[i])!='nan':
-            com_depos = qty* df.comision_depos[i]/100
-        else:com_depos=0
+def calculator_vl (cantidad,df):
+    arr=[cantidad]
+    for i in range(1,len(df)):
+        qty=arr[-1]
+        vl_pre=df.valor_liq[i-1]
+        vl_new=df.valor_liq[i]
 
-        com_total = qty * df.comision_gest_total[i]/100
-
-        if com_total < com_pat + com_res:
-            new_qty=qty+delta+benef-com_total-com_depos
-        else:new_qty=qty+delta+benef-com_pat-com_res-com_depos
+        new_qty=qty*vl_new/vl_pre
         arr.append(new_qty)
 
     return arr
