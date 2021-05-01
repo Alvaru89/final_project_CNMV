@@ -10,7 +10,7 @@ def home():
 
         - **_¿Cuánto habría ganado si...?_**: permite calcular el valor actual de un hipotética inversión en un fondo.
 
-        - **_Top 5 fondos_**: permite consultar los fondos con mejores rentabilidad por periodo.
+        - **_Top 5 fondos_**: permite consultar los fondos con mejores rentabilidad por periodo. Por favor, se paciente ya que requiere 2-3 minutos para cargar toda la base de datos.
 
         Espero que te sea de mucha ayuda.
 

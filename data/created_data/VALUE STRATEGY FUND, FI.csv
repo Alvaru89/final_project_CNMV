@@ -1,0 +1,6 @@
+fondo*name*period*start_date*end_date*riesgo*rotacion*rentab_avg*remun_liq*n_participaciones*n_participes*beneficio*patrimonio*dividendos*valor_liq*comision_gest_pat*comision_gest_res*comision_gest_total*comision_depos*rentab_IIC_trim*volat_vl_trim*ratio_gastos_trim*clase*period_type*year
+VALUE STRATEGY FUND, FI*VALUE STRATEGY FUND, FI*2019*2019-01-01*2019-12-31*7 en una escala de 1 a 7*0.33*-0.205**827507.54*29.0*0.0*16494455.0*False*10.1503*0.8300000000000001*0.0*0.8300000000000001*0.04****False*Y*2019
+VALUE STRATEGY FUND, FI*VALUE STRATEGY FUND, FI*2019 T4*2019-07-01*2019-12-31*7 en una escala de 1 a 7*1.08*-0.6**3207297.04*111.0*0.0*16494455.0*False*10.1503*0.39*0.0*0.39*0.02****False*T*2019
+VALUE STRATEGY FUND, FI*VALUE STRATEGY FUND, FI*2020*2020-01-01*2020-12-31*7 en una escala de 1 a 7*1.575*-0.36**4408213.34*353.5*0.0*65802713.0*False*11.6935*1.59*0.0*1.59*0.08****False*Y*2020
+VALUE STRATEGY FUND, FI*VALUE STRATEGY FUND, FI*2020 T2*2020-01-01*2020-06-30*7 en una escala de 1 a 7*2.5799999999999996*-0.22999999999999998**4014321.69*237.0*0.0*29080515.0*False*9.1186*0.39*0.0*0.39*0.02****False*T*2020
+VALUE STRATEGY FUND, FI*VALUE STRATEGY FUND, FI*2020 T4*2020-07-01*2020-12-31*7 en una escala de 1 a 7*1.4800000000000002*-0.39**7323461.880000001*725.0*0.0*65802713.0*False*11.6935*0.4*0.0*0.4*0.02****False*T*2020

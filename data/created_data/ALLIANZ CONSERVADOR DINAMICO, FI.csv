@@ -1,0 +1,4 @@
+fondo*name*period*start_date*end_date*riesgo*rotacion*rentab_avg*remun_liq*n_participaciones*n_participes*beneficio*patrimonio*dividendos*valor_liq*comision_gest_pat*comision_gest_res*comision_gest_total*comision_depos*rentab_IIC_trim*volat_vl_trim*ratio_gastos_trim*clase*period_type*year
+ALLIANZ CONSERVADOR DINAMICO, FI*ALLIANZ CONSERVADOR DINAMICO, FI*2020*2020-01-01*2020-12-31*2 en una escala entre 1 y 7*0.0*-0.31**2836383.4850000003*1.0*0.0*27676677.0*False*9.8753*0.86*0.0*0.86*0.07****False*Y*2020
+ALLIANZ CONSERVADOR DINAMICO, FI*ALLIANZ CONSERVADOR DINAMICO, FI*2020 T2*2020-01-01*2020-06-30*2 en una escala entre 1 y 7*0.0*-0.2**5710311.32*1.0*0.0*28498938.0*False*9.9294*0.3*0.0*0.3*0.019999999999999997****False*T*2020
+ALLIANZ CONSERVADOR DINAMICO, FI*ALLIANZ CONSERVADOR DINAMICO, FI*2020 T4*2020-07-01*2020-12-31*2 en una escala entre 1 y 7*0.0*-0.53**2124179.23*1.0*0.0*27676677.0*False*9.8753*0.24*0.0*0.24*0.02****False*T*2020

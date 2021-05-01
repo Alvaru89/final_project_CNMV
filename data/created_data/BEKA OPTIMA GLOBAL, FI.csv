@@ -1,0 +1,4 @@
+fondo*name*period*start_date*end_date*riesgo*rotacion*rentab_avg*remun_liq*n_participaciones*n_participes*beneficio*patrimonio*dividendos*valor_liq*comision_gest_pat*comision_gest_res*comision_gest_total*comision_depos*rentab_IIC_trim*volat_vl_trim*ratio_gastos_trim*clase*period_type*year
+BEKA OPTIMA GLOBAL, FI*BEKA OPTIMA GLOBAL FI*2020*2020-01-01*2020-12-31*7*0.0*-0.4**279955.89*1721.0*0.0*28208490.0*False*99.179*0.99**0.99*0.08****False*Y*2020
+BEKA OPTIMA GLOBAL, FI*BEKA OPTIMA GLOBAL FI*2020 T2*2020-01-01*2020-06-30*7*0.0*-0.4**303731.70000000007*1803.0*0.0*24428583.0*False*88.6726*0.24**0.24*0.02****False*T*2020
+BEKA OPTIMA GLOBAL, FI*BEKA OPTIMA GLOBAL FI*2020 T4*2020-07-01*2020-12-31*7*0.0*-0.4**284532.04000000004*1740.0*0.0*28208490.0*False*99.179*0.25**0.25*0.02****False*T*2020

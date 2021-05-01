@@ -1,0 +1,5 @@
+fondo*name*period*start_date*end_date*riesgo*rotacion*rentab_avg*remun_liq*n_participaciones*n_participes*beneficio*patrimonio*dividendos*valor_liq*comision_gest_pat*comision_gest_res*comision_gest_total*comision_depos*rentab_IIC_trim*volat_vl_trim*ratio_gastos_trim*clase*period_type*year
+BESTINVER LATAM, FI*BESTINVER LATAM FI*2019 T2*2019-01-01*2019-06-30*7*0.04*-0.3**1326972.67*374.0*0.0*13314236.0*False*15.4075*0.45**0.45*0.030000000000000002****False*T*2019
+BESTINVER LATAM, FI*BESTINVER LATAM FI*2020*2020-01-01*2020-12-31*7*0.355*-0.405**1495132.02*465.5*0.0*23663067.0*False*15.7317*1.75**1.75*0.1****False*Y*2020
+BESTINVER LATAM, FI*BESTINVER LATAM FI*2020 T2*2020-01-01*2020-06-30*7*0.63*-0.41**1494819.7199999997*464.0*0.0*19418459.0*False*13.0668*0.44**0.44*0.030000000000000002****False*T*2020
+BESTINVER LATAM, FI*BESTINVER LATAM FI*2020 T4*2020-07-01*2020-12-31*7*0.49*-0.4**1547539.0300000003*479.0*0.0*23663067.0*False*15.7317*0.44**0.44*0.020000000000000004****False*T*2020

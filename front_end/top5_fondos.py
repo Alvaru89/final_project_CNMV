@@ -6,9 +6,8 @@ def top5():
     selection_col, display_col = st.beta_columns([1, 5])
     result=''
     with selection_col:
-        data=create_df()
+        data=create_df(created=True)
         data_clean=wrang_main(data)
-        data_clean=pd.concat([data_clean,pd.read_csv(f'data/created_data.csv', sep='*', index=False)])
 
         year_start=int(data_clean.year.min())
         year_end = int(data_clean.year.max())

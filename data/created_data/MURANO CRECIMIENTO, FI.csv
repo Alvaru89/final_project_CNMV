@@ -1,0 +1,6 @@
+fondo*name*period*start_date*end_date*riesgo*rotacion*rentab_avg*remun_liq*n_participaciones*n_participes*beneficio*patrimonio*dividendos*valor_liq*comision_gest_pat*comision_gest_res*comision_gest_total*comision_depos*rentab_IIC_trim*volat_vl_trim*ratio_gastos_trim*clase*period_type*year
+MURANO CRECIMIENTO, FI*MURANO CRECIMIENTO CLASE A*2018*2018-01-01*2018-12-31*5 en una escala del 1 al 7.*0.27999999999999997*0.0**1037632.7*63.5*0.0*9042973.0*False*8.9827*1.35*0.0*1.35*0.08****True*Y*2018
+MURANO CRECIMIENTO, FI*MURANO CRECIMIENTO CLASE A*2018 T2*2018-01-01*2018-06-30*5 en una escala del 1 al 7.*0.7*0.0**1092210.3900000001*73.0*0.0*10292346.0*False*9.6321*0.34*0.0*0.34*0.02****True*T*2018
+MURANO CRECIMIENTO, FI*MURANO CRECIMIENTO CLASE A*2018 T4*2018-07-01*2018-12-31*5 en una escala del 1 al 7.*0.42*0.0**991067.5199999999*62.0*0.0*9042973.0*False*8.9827*0.34*0.0*0.34*0.02****True*T*2018
+MURANO CRECIMIENTO, FI*MURANO CRECIMIENTO CLASE B*2018 T2*2018-01-01*2018-06-30*5 en una escala del 1 al 7.*0.7*0.0**1285662.6400000001*4.0*0.0*9310318.0*False*9.6512*0.2*0.0*0.2*0.02****True*T*2018
+MURANO CRECIMIENTO, FI*MURANO CRECIMIENTO CLASE C*2018 T2*2018-01-01*2018-06-30*5 en una escala del 1 al 7.*0.7*0.0**1221458.29*49.0*0.0*9056743.0*False*9.6743*0.14999999999999997*0.0*0.14999999999999997*0.02****True*T*2018

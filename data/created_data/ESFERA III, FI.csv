@@ -1,0 +1,5 @@
+fondo*name*period*start_date*end_date*riesgo*rotacion*rentab_avg*remun_liq*n_participaciones*n_participes*beneficio*patrimonio*dividendos*valor_liq*comision_gest_pat*comision_gest_res*comision_gest_total*comision_depos*rentab_IIC_trim*volat_vl_trim*ratio_gastos_trim*clase*period_type*year
+ESFERA III, FI*Esfera III , FI*2019*2019-01-01*2019-12-31*6 (En una escala del 1 al 7)*0.02*0.0**6398.8099999999995*19.0*0.0*780945.0*False*120.1708*1.35*1.7400000000000002*3.09*0.08****False*Y*2019
+ESFERA III, FI*Esfera III , FI*2019 T2*2019-01-01*2019-06-30*6 (En una escala del 1 al 7)*-0.11*0.0**10280.099999999999*11.0*0.0*704216.0*False*111.7982*0.34*-0.19999999999999996*0.1399999999999999*0.02****False*T*2019
+ESFERA III, FI*Esfera III , FI*2019 T4*2019-07-01*2019-12-31*6 (En una escala del 1 al 7)*0.06*0.0**6504.34*47.0*0.0*780945.0*False*120.1708*0.34*0.51*0.8500000000000001*0.02****False*T*2019
+ESFERA III, FI*Esfera III , FI*2020 T2*2020-01-01*2020-06-30*6 (En una escala del 1 al 7)*0.04*-0.72**6985.980000000001*19.0*0.0*864604.0*False*112.9436*0.34*0.0*0.34*0.02****False*T*2020

@@ -1,0 +1,11 @@
+fondo*name*period*start_date*end_date*riesgo*rotacion*rentab_avg*remun_liq*n_participaciones*n_participes*beneficio*patrimonio*dividendos*valor_liq*comision_gest_pat*comision_gest_res*comision_gest_total*comision_depos*rentab_IIC_trim*volat_vl_trim*ratio_gastos_trim*clase*period_type*year
+BINDEX USA INDICE, FI*BINDEX USA INDICE, FI*2018*2018-01-01*2018-12-31*5 en una escala del 1 al 7*0.0*-0.005**30000.0*1.5*0.0*300000.0*False*9.9988*0.0*0.0*0.0*0.0****False*Y*2018
+BINDEX USA INDICE, FI*ßINDEX USA ÍNDICE*2018 T2*2018-01-01*2018-06-30*5 en una escala del 1 al 7*0.0*0.0**30000.0*1.0*0.0*300000.0*False*9.9991*0.0*0.0*0.0*0.0****False*T*2018
+BINDEX USA INDICE, FI*BINDEX USA INDICE, FI*2018 T4*2018-07-01*2018-12-31*5 en una escala del 1 al 7*0.0*0.0**30000.0*2.0*0.0*300000.0*False*9.9988*0.0*0.0*0.0*0.0****False*T*2018
+BINDEX USA INDICE, FI*BINDEX USA INDICE, FI*2018*2018-01-01*2018-12-31*5 en una escala del 1 al 7*0.0*-0.005**30000.0*1.5*0.0*300000.0*False*9.9988*0.0*0.0*0.0*0.0****False*Y*2018
+BINDEX USA INDICE, FI*ßINDEX USA ÍNDICE*2018 T2*2018-01-01*2018-06-30*5 en una escala del 1 al 7*0.0*0.0**30000.0*1.0*0.0*300000.0*False*9.9991*0.0*0.0*0.0*0.0****False*T*2018
+BINDEX USA INDICE, FI*BINDEX USA INDICE, FI*2018 T4*2018-07-01*2018-12-31*5 en una escala del 1 al 7*0.0*0.0**30000.0*2.0*0.0*300000.0*False*9.9988*0.0*0.0*0.0*0.0****False*T*2018
+BINDEX USA INDICE, FI*BINDEX USA INDICE, FI*2019 T2*2019-01-01*2019-06-30*5 en una escala del 1 al 7*0.0*1.9400000000000002**16916921.23*16.0*0.0*183716000.0*False*11.0018*0.01*0.0*0.01*0.0****False*T*2019
+BINDEX USA INDICE, FI*BINDEX USA INDICE, FI*2020*2020-01-01*2020-12-31*6 en una escala del 1 al 7*0.0*0.12**34277296.46*14797.5*0.0*520692000.0*False*13.3505*0.05*0.0*0.05*0.01****False*Y*2020
+BINDEX USA INDICE, FI*BINDEX USA INDICE, FI*2020 T2*2020-01-01*2020-06-30*6 en una escala del 1 al 7*0.0*0.0**41790095.980000004*27857.0*0.0*352142000.0*False*11.9157*0.02*0.0*0.02*0.0****False*T*2020
+BINDEX USA INDICE, FI*BINDEX USA INDICE, FI*2020 T4*2020-07-01*2020-12-31*6 en una escala del 1 al 7*0.0*-0.12**44811320.5*16219.0*0.0*520692000.0*False*13.3505*0.019999999999999997*0.0*0.019999999999999997*0.01****False*T*2020

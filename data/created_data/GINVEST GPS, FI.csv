@@ -1,0 +1,7 @@
+fondo*name*period*start_date*end_date*riesgo*rotacion*rentab_avg*remun_liq*n_participaciones*n_participes*beneficio*patrimonio*dividendos*valor_liq*comision_gest_pat*comision_gest_res*comision_gest_total*comision_depos*rentab_IIC_trim*volat_vl_trim*ratio_gastos_trim*clase*period_type*year
+GINVEST GPS, FI*GINVEST GPS, FI*2019*2019-01-01*2019-12-31*4 en una escala de 1 a 7*0.645*-0.08**1698642.1800000002*105.5*0.0*21429415.0*False*10.5478*0.99*0.72*1.72*0.08****False*Y*2019
+GINVEST GPS, FI*GINVEST GPS, FI*2019 T2*2019-01-01*2019-06-30*4 en una escala de 1 a 7*1.22*0.0**1808302.8*80.0*0.0*14108490.0*False*10.331*0.25*0.0*0.25*0.02****False*T*2019
+GINVEST GPS, FI*GINVEST GPS, FI*2019 T4*2019-07-01*2019-12-31*4 en una escala de 1 a 7*0.56*-0.32**2558247.97*228.0*0.0*21429415.0*False*10.5478*0.25*0.21*0.47*0.02****False*T*2019
+GINVEST GPS, FI*GINVEST GPS, FI*2020*2020-01-01*2020-12-31*4 en una escala de 1 a 7*0.525*-0.41**2357122.835*212.5*0.0*30566555.0*False*11.6952*1.0*0.9299999999999999*1.9300000000000002*0.08****False*Y*2020
+GINVEST GPS, FI*GINVEST GPS, FI*2020 T2*2020-01-01*2020-06-30*4 en una escala de 1 a 7*0.72*-0.41999999999999993**2102976.68*202.0*0.0*22598430.0*False*10.7579*0.25*0.18*0.43000000000000005*0.02****False*T*2020
+GINVEST GPS, FI*GINVEST GPS, FI*2020 T4*2020-07-01*2020-12-31*4 en una escala de 1 a 7*0.5900000000000001*-0.41999999999999993**2780855.28*264.0*0.0*30566555.0*False*11.6952*0.25*0.47*0.72*0.02****False*T*2020

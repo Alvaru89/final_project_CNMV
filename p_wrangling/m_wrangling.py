@@ -1,26 +1,35 @@
 import pandas as pd
-import numpy as np
 import os
 import streamlit as st
+from tqdm import tqdm
 
-#@st.cache(suppress_st_warning=True,allow_output_mutation=True)
-def create_df(path='data/csv',limit=False):
+@st.cache(suppress_st_warning=True,allow_output_mutation=True)
+def create_df(path='data/csv',limit=False,created=False):
     df=False
     i=0
-    for file in os.listdir('data/csv'):
-        if type(df)==bool:
-            df=pd.read_csv(f'data/csv/{file}', sep='*')
+    for file in tqdm(os.listdir('data/csv')):
+        if type(df) == bool:
+            df = pd.read_csv(f'data/csv/{file}', sep='*')
+            if created:
+                try:df = df.append(pd.read_csv(f'data/created_data/{file}', sep='*'))
+                except:pass
         else:
-            df=df.append(pd.read_csv(f'data/csv/{file}', sep='*'))
-        print(file, 'parsed')
+            df = df.append(pd.read_csv(f'data/csv/{file}', sep='*'))
+            if created:
+                try:df = df.append(pd.read_csv(f'data/created_data/{file}', sep='*'))
+                except:pass
+        #print(file, 'parsed')
         i += 1
         if limit and i>20:
             return df
     return df.reset_index(drop=True)
 
 
-def load_fondo(fondo,path='data/csv'):
+def load_fondo(fondo,path='data/csv',created=False):
     df=pd.read_csv(f'{path}/{fondo}.csv', sep='*')
+    if created:
+        try:df = df.append(pd.read_csv(f'data/created_data/{fondo}.csv', sep='*'))
+        except:pass
     #print(fondo, 'parsed')
     return df
 
@@ -53,11 +62,6 @@ def wrang_main(df):
 
     df['period_type'] = df.apply(lambda x: period_type(x['period']), axis=1)
     df['year'] = df.apply(lambda x: x['start_date'].year, axis=1)
-    #
-    #yearly data
-    #export calculated data csv
-
-    #new cols
 
     return df
 
@@ -99,14 +103,14 @@ def yearly_data(S1,S2):
             elif variable=='start_date':
                 array.append(S1[i])
             elif variable == 'dividendos':
-                array.append(bool(S1[i]+S2[i]))
+                try:array.append(bool(S1[i]+S2[i]))
+                except: array.append(False)
             elif variable=='period_type':
                 array.append('Y')
             elif variable=='year':
                 array.append(S1.period[:4])
         elif variable in null_vars:
             array.append(None)
-
     return array
 
 def period_type(x):
@@ -130,20 +134,14 @@ def parse_strings(x):
     try: return float(x)
     except: return None
 
-# def make_clickable(link):
-#     return f'<a target="_blank" href="{link}">Link</a>'
-
-
-
-
 def create_data(df,merge=True, save=False):
     df.reset_index(drop=True, inplace=True)
     df_calc = False
-    for fondo in df.fondo.unique():
+    for fondo in tqdm(df.fondo.unique()):
         #print(fondo)
         df_fondo=df[df.fondo==fondo]
         for year in df_fondo.year.unique():
-            print(year)
+            #print(year)
             df_year=df_fondo[(df_fondo.year==year)]
             names = df_year.name.unique()
             for name in names:
@@ -185,14 +183,17 @@ def create_data(df,merge=True, save=False):
                         else:
                             df_calc.loc[len(df_calc)] = datum
 
+    df_calc=wrang_main(df_calc)
     if save:
-        wrang_main(df_calc).to_csv(f'data/created_data.csv', sep='*', index=False)
+        for fondo in df_calc.fondo.unique():
+            clean_fondo = fondo.replace('/', '-')
+            df_calc[df_calc.fondo==fondo].to_csv(f'data/created_data/{clean_fondo}.csv', sep='*', index=False)
 
     if merge and type(df_calc)!=bool:
-        df_calc=pd.concat([df,wrang_main(df_calc)])
+        df_calc=pd.concat([df,df_calc])
         return df_calc
     elif merge==False:
-        return wrang_main(df_calc)   #devuelve un False, no dataframe
+        return df_calc   #devuelve un False, si no hay dataframe
     else:
         return df
 
@@ -230,7 +231,8 @@ def T2_data(T1,S1):
             elif variable=='start_date':
                 array.append(T1[i])
             elif variable == 'dividendos':
-                array.append(bool(T1[i]+S1[i]))
+                try: array.append(bool(T1[i]+S1[i]))
+                except:array.append(False)
             elif variable=='period_type':
                 array.append('Y')
             elif variable=='year':
@@ -274,7 +276,8 @@ def T4_data(T3,S2):
             elif variable=='start_date':
                 array.append(T3[i])
             elif variable == 'dividendos':
-                array.append(bool(T3[i]+S2[i]))
+                try:array.append(bool(T3[i]+S2[i]))
+                except:array.append(False)
             elif variable=='period_type':
                 array.append('Y')
             elif variable=='year':

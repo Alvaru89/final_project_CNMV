@@ -1,0 +1,11 @@
+fondo*name*period*start_date*end_date*riesgo*rotacion*rentab_avg*remun_liq*n_participaciones*n_participes*beneficio*patrimonio*dividendos*valor_liq*comision_gest_pat*comision_gest_res*comision_gest_total*comision_depos*rentab_IIC_trim*volat_vl_trim*ratio_gastos_trim*clase*period_type*year
+KRONOS, FI*Kronos FI*2017 T4*2017-07-01*2017-12-31*5 (En una escala del 1 al 7)*0.0*0.0**57504.56*7.0*0.0*2889202.0*False*95.5036*0.65*1.29*0.65*0.05****False*T*2017
+KRONOS, FI*Kronos FI*2018*2018-01-01*2018-12-31*5 (En una escala del 1 al 7)*4.85*0.0**30231.5*5.0*0.0*2671996.0*False*88.38799999999999*1.35*0.0*1.35*0.1****False*Y*2018
+KRONOS, FI*Kronos FI*2018 T2*2018-01-01*2018-06-30*5 (En una escala del 1 al 7)*7.319999999999999*0.0**30232.68*4.0*0.0*2718833.0*False*89.9302*0.34*0.0*0.34*0.030000000000000002****False*T*2018
+KRONOS, FI*Kronos FI*2018 T4*2018-07-01*2018-12-31*5 (En una escala del 1 al 7)*3.620000000000001*0.0**30237.98*7.0*0.0*2671996.0*False*88.38799999999999*0.34*0.0*0.34*0.020000000000000004****False*T*2018
+KRONOS, FI*Kronos FI*2019*2019-01-01*2019-12-31*5 (En una escala del 1 al 7)*2.045*0.0**98901.745*219.0*0.0*14855290.0*False*88.646*1.2000000000000002*0.0*1.2000000000000002*0.1****False*Y*2019
+KRONOS, FI*Kronos FI*2019 T2*2019-01-01*2019-06-30*5 (En una escala del 1 al 7)*6.56*0.0**30215.930000000004*33.0*0.0*2662102.0*False*88.0803*0.34*0.0*0.34*0.030000000000000002****False*T*2019
+KRONOS, FI*Kronos FI*2019 T4*2019-07-01*2019-12-31*5 (En una escala del 1 al 7)*0.0*0.0**335149.86*776.0*0.0*14855290.0*False*88.646*0.18000000000000005*0.0*0.18000000000000005*0.020000000000000004****False*T*2019
+KRONOS, FI*Kronos FI*2020*2020-01-01*2020-12-31*5 (En una escala del 1 al 7)*0.0*-0.24**33592.2*291.5*0.0*5109906.0*False*91.8047*0.0*0.0*0.0*0.1****False*Y*2020
+KRONOS, FI*Kronos FI*2020 T2*2020-01-01*2020-06-30*5 (En una escala del 1 al 7)*0.0*-0.24**2302.6800000000003*220.0*0.0*1030258.0*False*89.4025*0.0*0.0*0.0*0.020000000000000004****False*T*2020
+KRONOS, FI*Kronos FI*2020 T4*2020-07-01*2020-12-31*5 (En una escala del 1 al 7)*-0.8*-0.72**75011.78*506.0*0.0*5109906.0*False*91.8047*0.0*0.0*0.0*0.030000000000000002****False*T*2020

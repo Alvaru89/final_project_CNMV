@@ -1,0 +1,5 @@
+fondo*name*period*start_date*end_date*riesgo*rotacion*rentab_avg*remun_liq*n_participaciones*n_participes*beneficio*patrimonio*dividendos*valor_liq*comision_gest_pat*comision_gest_res*comision_gest_total*comision_depos*rentab_IIC_trim*volat_vl_trim*ratio_gastos_trim*clase*period_type*year
+EBN SINYCON VALOR, FI*EBN Sinycon Valor, FI*2019*2019-01-01*2019-12-31*Nivel Riesgo 5*0.095*0.0**33322.675*36.0*0.0*3451328.0*False*103.9176*0.0*0.44*0.44*0.08****False*Y*2019
+EBN SINYCON VALOR, FI*EBN Sinycon Valor, FI*2019 T2*2019-01-01*2019-06-30*Nivel Riesgo 5*0.0*0.0**33605.43*31.0*0.0*3318828.0*False*99.2675*0.0*-0.13*-0.13*0.02****False*T*2019
+EBN SINYCON VALOR, FI*EBN Sinycon Valor, FI*2019 T4*2019-07-01*2019-12-31*Nivel Riesgo 5*0.0*0.0**33099.14*68.0*0.0*3451328.0*False*103.9176*0.0*0.44*0.44*0.02****False*T*2019
+EBN SINYCON VALOR, FI*EBN Sinycon Valor, FI*2020 T2*2020-01-01*2020-06-30*Nivel Riesgo 5*0.47*0.0**33123.670000000006*143.0*0.0*2678351.0*False*81.1797*0.0*0.0*0.0*0.02****False*T*2020

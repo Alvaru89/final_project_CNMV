@@ -5,14 +5,6 @@ import pandas as pd
 import numpy as np
 import os
 
-
-# probar a hacer un link en una celda a ver si streamlit lo lee como link
-#df['link'] = df['nif'].apply(lambda x: '<a href="https://www.cnmv.es/portal/Consultas/IIC/Fondo.aspx?nif=V{x}">link</a>')
-# df = df.to_html(escape=False)
-# st.write(df, unsafe_allow_html=True)
-#or
-#st.write("check out this [link](https://share.streamlit.io/mesmith027/streamlit_webapps/main/MC_pi/streamlit_app.py)")
-
 def get_links_from_web():
     no_pages = 130  # automatizar?
     dict_links = {}
@@ -46,7 +38,7 @@ def get_info_fondo(fondo,link):
         # print(fondo, 'skipped!')
         return
     # print(f'extracting {fondo}')
-    print(f'starting time: {datetime.datetime.now()}')
+    #print(f'starting time: {datetime.datetime.now()}')
     web_fondo=requests.get(link+'&vista=0')
     sopa_fondo = BeautifulSoup(web_fondo.content, 'html.parser')
     registro_CNMV = sopa_fondo.find('td', {'data-th': "Nº Registro oficial"}).text
@@ -55,7 +47,7 @@ def get_info_fondo(fondo,link):
     fecha_fin = sopa_fondo.find('td', {'data-th': "Fecha último folleto"}).text
     fecha_fin = datetime.datetime.strptime(fecha_fin, '%d/%m/%Y')
     start = fecha_reg.year
-    end = fecha_fin.year + 1
+    end = fecha_fin.year + 2
 
     gestora = sopa_fondo.find('table', {'id': "ctl00_ContentPrincipal_gridGestora"}).find('td', {
         'data-th': "Denominación"}).text
@@ -69,7 +61,7 @@ def get_info_fondo(fondo,link):
         temp_info.to_csv(f'data/csv_gen_info/{clean_fondo}.csv', sep='*', index=False)
         #print(f'General info of {clean_fondo}.stored!')
     else:
-        print(f'ALERT {fondo} has no general data!!!')
+        print(f'{fondo} has no general data!!!')
 
     temp = False
     for year in range(start, end):

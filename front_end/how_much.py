@@ -30,11 +30,10 @@ def how_much():
     data_filtered = ''
     periodo_sel=''
     if len(data)==0 and fondo_selected:
-        data=load_fondo(fondo_selected ,path)
-        full_created=pd.read_csv(f'data/created_data.csv', sep='*', index=False)
-        data_clean = pd.concat([wrang_main(data), wrang_main(full_created[full_created.fondo==fondo_selected]]))
-
-
+        clean_fondo = fondo_selected.replace('/', '-')
+        data=load_fondo(fondo_selected ,path, created=True)
+        data_created=pd.read_csv(f'data/created_data/{clean_fondo}.csv', sep='*')
+        data_clean = pd.concat([wrang_main(data), wrang_main(data_created)])
 
     if len(data_clean)>0:
       year_start=int(data_clean.year.min())

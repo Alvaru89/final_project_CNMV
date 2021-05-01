@@ -2,8 +2,6 @@ import argparse
 import os
 import p_acquisition.m_acquisition_lean as acq
 import p_wrangling.m_wrangling as wra
-import p_analysis
-import p_reporting
 import datetime
 
 def argument_parser():
@@ -31,7 +29,7 @@ def main(arguments):
     print("obteniendo informacion de los fondos")
     for fondo, link in dict_links.items():
         try: acq.get_info_fondo(fondo,link)
-        except:
+        except Exception:
             import json
             import telegram
             def notify_ending(message):
@@ -57,7 +55,6 @@ def main(arguments):
 if __name__ == '__main__':
     my_arguments= argument_parser()
     main(my_arguments)
-    print(len(os.listdir('data/csv')))
-    print('df created')
+    print('Pipeline finished')
 
 
