@@ -29,6 +29,18 @@ def main(arguments):
     print("obteniendo informacion de los fondos")
     for fondo, link in dict_links.items():
         try: acq.get_info_fondo(fondo,link)
+        except TimeoutError:
+            import json
+            import telegram
+            def notify_ending(message):
+                with open('../keys.json', 'r') as keys_file:
+                    k = json.load(keys_file)
+                    token = k['telegram_token']
+                    chat_id = k['telegram_chat_id']
+                bot = telegram.Bot(token=token)
+                bot.sendMessage(chat_id=chat_id, text=message)
+            notify_ending('ha petau por timeout')
+            raise EOFError
         except Exception:
             import json
             import telegram
@@ -39,7 +51,7 @@ def main(arguments):
                     chat_id = k['telegram_chat_id']
                 bot = telegram.Bot(token=token)
                 bot.sendMessage(chat_id=chat_id, text=message)
-            notify_ending('ha petau')
+            notify_ending('ha petau por alguna razón')
             raise EOFError
         #acq.get_info_posiciones(fondo,link)
         #print(f'Elapsed time: {(datetime.datetime.now() - a).total_seconds() / 60} minutes')

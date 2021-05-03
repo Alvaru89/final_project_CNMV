@@ -31,6 +31,7 @@ def load_fondo(fondo,path='data/csv',created=False):
         try:df = df.append(pd.read_csv(f'data/created_data/{fondo}.csv', sep='*'))
         except:pass
     #print(fondo, 'parsed')
+    df.drop_duplicates(inplace=True)
     return df
 
 
@@ -44,7 +45,7 @@ def load_gen_data(fondo,path='data/csv_gen_info'):
 
 
 def wrang_main(df):
-
+    df.drop_duplicates(['name', 'period'], inplace=True)
     #converting vars
     df['start_date'] = pd.to_datetime(df['start_date'])
     df['end_date'] = pd.to_datetime(df['end_date'])

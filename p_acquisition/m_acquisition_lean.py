@@ -10,7 +10,7 @@ def get_links_from_web():
     dict_links = {}
     for page in range(no_pages):
         url = f'https://www.cnmv.es/portal/Consultas/MostrarListados.aspx?id=3&page={str(page)}'
-        sopa_listado = BeautifulSoup(requests.get(url).content, 'html.parser')
+        sopa_listado = BeautifulSoup(requests.get(url, timeout=5).content, 'html.parser')
         try:results = sopa_listado.find_all('li', {'id': "elementoPrimerNivel"})
         except:continue
 
@@ -39,7 +39,7 @@ def get_info_fondo(fondo,link):
         return
     # print(f'extracting {fondo}')
     #print(f'starting time: {datetime.datetime.now()}')
-    web_fondo=requests.get(link+'&vista=0')
+    web_fondo=requests.get(link+'&vista=0', timeout=5)
     sopa_fondo = BeautifulSoup(web_fondo.content, 'html.parser')
     registro_CNMV = sopa_fondo.find('td', {'data-th': "Nº Registro oficial"}).text
     fecha_reg = sopa_fondo.find('td', {'data-th': "Fecha registro oficial"}).text
@@ -67,7 +67,7 @@ def get_info_fondo(fondo,link):
     for year in range(start, end):
         url_year = f'{link}&vista=1&fs=01%2f02%2f{year}'
         # print(url_year)
-        web_fondo_year = requests.get(url_year)  # con requests
+        web_fondo_year = requests.get(url_year, timeout=5)
 
         sopa_fondo = BeautifulSoup(web_fondo_year.content, 'html.parser')
 
@@ -84,7 +84,7 @@ def get_info_fondo(fondo,link):
             xbrl_link = 'https://www.cnmv.es/portal/Consultas/' + str(td.find_all('a')[1]['href'][3:])
             # print(xbrl_link)
 
-            xbrl = requests.get(xbrl_link)
+            xbrl = requests.get(xbrl_link, timeout=5)
             fondo_info=xml_scrap_main(xbrl.content, nif, fondo)
 
             for n in range(len(fondo_info)):

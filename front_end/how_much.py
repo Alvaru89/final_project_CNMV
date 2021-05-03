@@ -35,6 +35,8 @@ def how_much():
         data_created=pd.read_csv(f'data/created_data/{clean_fondo}.csv', sep='*')
         data_clean = pd.concat([wrang_main(data), wrang_main(data_created)])
 
+    else:
+        mask3=[True for x in range(len(data_clean))]
     if len(data_clean)>0:
       year_start=int(data_clean.year.min())
     else: year_start=2000
@@ -42,6 +44,8 @@ def how_much():
       year_end = int(data_clean.year.max())  # ver minimo del dataframe
     else: year_end=datetime.date.today().year
     year_inv = st.slider("Año de comienzo de la inversión", year_start, year_end, year_start, 1)
+
+
 
     periodo_inv = st.selectbox("Trimestre de comienzo de la inversión", options= ['T1','T2','T3','T4'], index=0)
     periodo_sel=f'{year_inv} {periodo_inv}'
@@ -51,10 +55,11 @@ def how_much():
         mask1=data_clean.period_type=='T'
         mask2=data_clean.period>=periodo_sel
         data_filtered=data_clean[mask1&mask2]
+        if data_filtered.clase.sum() > 0:
+            data_filtered.groupby('period').mean()
+        data_filtered.drop_duplicates('period', inplace=True)
+        data_filtered.sort_values(['name','period'],ascending=True,inplace=True)
         data_filtered.reset_index(drop=True,inplace=True)
-        data_filtered.sort_values('period',ascending=True,inplace=True)
-        #inversion_rentab=calculator_rentab(float(input_qty), data_filtered)
-        #data_filtered['inversion_rentab']=inversion_rentab
         inversion_vl=calculator_vl(float(input_qty), data_filtered)
         data_filtered['inversion']=inversion_vl
 
@@ -80,51 +85,11 @@ def how_much():
             comisiones=['comision_gest_pat','comision_gest_res','comision_gest_total','comision_depos']
             st.line_chart(data_filtered[comisiones])
 
-
-def calculator_rentab (cantidad,df):
-    arr=[cantidad]
-    for i in range(1,len(df)):
-        qty=arr[-1]
-        delta=qty*df.rentab_avg[i]/100
-        #La rentabilidad ya incluye las comisiones.
-
-        # if str(df.beneficio[i])!='nan' and df.beneficio[i]!=0:
-        #     benef = qty*df.beneficio[i]/(df.patrimonio[i]/df.n_participaciones[i])*0.79
-        #     #asumida una tributacion del 21%
-        # else:
-        #     benef=0
-        #
-        # if str(df.comision_gest_pat[i])!='nan':
-        #     com_pat = qty*df.comision_gest_pat[i]/100
-        # else:
-        #     com_pat=0
-        # if str(df.comision_gest_res[i])!='nan' and delta > 0:
-        #     com_res = delta*df.comision_gest_res[i]/100
-        # else:
-        #     com_res=0
-        #
-        # if str(df.comision_depos[i])!='nan':
-        #     com_depos = qty* df.comision_depos[i]/100
-        # else:com_depos=0
-        #
-        # com_total = qty * df.comision_gest_total[i]/100
-        #
-        # if com_total < com_pat + com_res:
-        #     new_qty=qty+delta+benef-com_total-com_depos
-        # else:new_qty=qty+delta+benef-com_pat-com_res-com_depos
-        new_qty=qty+delta
-        arr.append(new_qty)
-
-    return arr
-
 def calculator_vl (cantidad,df):
     arr=[cantidad]
+    part=cantidad/df.valor_liq[0]
     for i in range(1,len(df)):
-        qty=arr[-1]
-        vl_pre=df.valor_liq[i-1]
         vl_new=df.valor_liq[i]
-
-        new_qty=qty*vl_new/vl_pre
+        new_qty=part*vl_new
         arr.append(new_qty)
-
     return arr

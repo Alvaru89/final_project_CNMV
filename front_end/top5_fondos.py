@@ -22,11 +22,11 @@ def top5():
 
     with display_col:
         st.write(f'Los mejores fondos en {period_full} son:')
-        result=data_filtered.sort_values('rentab_avg', ascending=False,).reset_index(drop=True).loc[:5,:][['fondo', 'name', 'rentab_avg', 'rotacion','rentab_IIC_trim', 'volat_vl_trim', 'ratio_gastos_trim']]
-        st.dataframe(result.set_index('fondo'))
+        result=data_filtered.groupby('fondo').mean().sort_values('rentab_avg', ascending=False,).iloc[:5,:][['rentab_avg', 'rotacion','rentab_IIC_trim', 'volat_vl_trim', 'ratio_gastos_trim']]
+        st.dataframe(result)
         if len(result)!=0:
             gen_data = ''
-            for fondo in result.fondo:
+            for fondo in result.index:
                 if len(gen_data) == 0:
                     gen_data = load_gen_data(fondo)
                 else:
